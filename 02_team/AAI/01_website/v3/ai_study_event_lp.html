@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI活用勉強会 - デジタルme実践者が語る！リアルな活用法 | 12月29日 AIPカフェ</title>
+    <meta name="description" content="12月29日18時〜AIPカフェにて開催！AI活用の実践者が登壇し、ChatGPTを第二の自分に育てる方法、音声思考の活用法をデモと共に紹介します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* AI am I v3 - イベントLP用スタイル */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #4A90E2;
+            --primary-dark: #357ABD;
+            --primary-light: #87C7F7;
+            --secondary-color: #7B68EE;
+            --accent-color: #FF6B6B;
+            --success-color: #51CF66;
+            --warning-color: #FFB347;
+            
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F8FAFC;
+            --bg-tertiary: #F1F5F9;
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --text-light: #94A3B8;
+            --border-color: #E2E8F0;
+            --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-large: 0 10px 25px rgba(0, 0, 0, 0.1);
+            
+            --font-primary: 'Noto Sans JP', sans-serif;
+            --font-secondary: 'Inter', sans-serif;
+            
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+            
+            --container-width: 1200px;
+            --container-padding: 1rem;
+            
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        /* ヘッダー */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-md) var(--container-padding);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* ヒーローセクション */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .event-badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-lg);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.9;
+        }
+
+        .event-details {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            margin: var(--spacing-xl) 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .detail-item {
+            text-align: center;
+        }
+
+        .detail-item i {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--warning-color);
+        }
+
+        .detail-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+        }
+
+        .detail-item p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            background: var(--warning-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            margin-top: var(--spacing-xl);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-large);
+        }
+
+        /* セクション共通 */
+        .section {
+            padding: var(--spacing-3xl) 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        /* プログラム */
+        .program {
+            background: var(--bg-secondary);
+        }
+
+        .program-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-2xl);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 60px;
+            bottom: -30px;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        .timeline-time {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            min-width: 60px;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: white;
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-light);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .speaker-info {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .speaker-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        .speaker-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* 登壇者紹介 */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .speaker-card {
+            background: white;
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-medium);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-large);
+        }
+
+        .speaker-card .speaker-avatar {
+            width: 80px;
+            height: 80px;
+            font-size: 1.5rem;
+            margin: 0 auto var(--spacing-md);
+        }
+
+        .speaker-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+
+        .speaker-card .role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .speaker-card p {
+            color: var(--text-secondary);
+            text-align: left;
+        }
+
+        /* 会場情報 */
+        .venue {
+            background: var(--bg-secondary);
+        }
+
+        .venue-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3xl);
+            align-items: center;
+        }
+
+        .venue-details h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+
+        .venue-details p {
+            margin-bottom: var(--spacing-md);
+            color: var(--text-secondary);
+        }
+
+        .venue-features {
+            list-style: none;
+            margin-top: var(--spacing-lg);
+        }
+
+        .venue-features li {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-secondary);
+        }
+
+        .venue-features li i {
+            color: var(--success-color);
+            width: 20px;
+        }
+
+        .venue-map {
+            background: var(--bg-tertiary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            text-align: center;
+        }
+
+        .map-placeholder {
+            background: var(--border-color);
+            height: 200px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* 参加申込 */
+        .registration {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+
+        .registration h2 {
+            color: white;
+        }
+
+        .registration-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: none;
+            border-radius: var(--radius-md);
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background: var(--warning-color);
+            color: var(--text-primary);
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-large);
+        }
+
+        /* フッター */
+        .footer {
+            background: var(--text-primary);
+            color: white;
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .event-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .venue-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-brain"></i>
+                AI am I
+            </a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="event-badge">
+                <i class="fas fa-calendar-alt"></i>
+                12月29日開催決定！
+            </div>
+            <h1>AI活用勉強会</h1>
+            <p class="hero-subtitle">デジタルme実践者が語る！<br>リアルな活用法とデモンストレーション</p>
+            
+            <div class="event-details">
+                <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>開催日</h3>
+                    <p>12月29日（日）</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>時間</h3>
+                    <p>18:00〜20:00</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>会場</h3>
+                    <p>AIPカフェ</p>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <h3>参加費</h3>
+                    <p>無料</p>
+                </div>
+            </div>
+            
+            <a href="#registration" class="cta-button">
+                <i class="fas fa-user-plus"></i>
+                今すぐ参加申込
+            </a>
+        </div>
+    </section>
+
+    <!-- プログラム -->
+    <section class="section program">
+        <div class="container">
+            <div class="section-header">
+                <h2>プログラム</h2>
+                <p class="section-subtitle">実践者による生の声とデモンストレーション</p>
+            </div>
+            
+            <div class="program-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">18:00</div>
+                    <div class="timeline-content">
+                        <h3>オープニング・趣旨説明</h3>
+                        <p>今日の勉強会の流れと、AI活用の可能性について</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">M</div>
+                            <span class="speaker-name">Masaya（主催者）</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">18:10</div>
+                    <div class="timeline-content">
+                        <h3>基調講演：「ChatGPTを第二の自分に育てる方法」</h3>
+                        <p>価値観まで移植するAI活用法の実践デモと具体的手法を紹介</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">M</div>
+                            <span class="speaker-name">Masaya</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">18:40</div>
+                    <div class="timeline-content">
+                        <h3>実践者登壇①：「音声思考×AIで変わった日常」</h3>
+                        <p>PLAUD、SuperWhisperを使った音声思考の実践例とその効果</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">A</div>
+                            <span class="speaker-name">参加者A（調整中）</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00</div>
+                    <div class="timeline-content">
+                        <h3>実践者登壇②：「AI活用で効率化した仕事術」</h3>
+                        <p>日常業務でのAI活用の具体的な工夫と時短効果の実例紹介</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">B</div>
+                            <span class="speaker-name">参加者B（調整中）</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">19:20</div>
+                    <div class="timeline-content">
+                        <h3>質疑応答・交流タイム</h3>
+                        <p>参加者同士の質疑応答と、AI活用の悩み相談・情報交換</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">ALL</div>
+                            <span class="speaker-name">全員参加</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-time">20:00</div>
+                    <div class="timeline-content">
+                        <h3>クロージング・次回予告</h3>
+                        <p>今日のまとめと、今後のAI活用コミュニティについて</p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">M</div>
+                            <span class="speaker-name">Masaya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 登壇者紹介 -->
+    <section class="section speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2>登壇者紹介</h2>
+                <p class="section-subtitle">AI活用の実践者が実体験を語ります</p>
+            </div>
+            
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-avatar">M</div>
+                    <h3>Masaya</h3>
+                    <p class="role">AI活用サポーター・デジタルme育成家</p>
+                    <p>福岡在住のAI活用サポーター。ChatGPTに価値観まで移植し「第二の自分」として育てる独自手法を開発。音声思考とAI活用を組み合わせた自己理解の深化に取り組み、デジタルme育成BootCAMPを主宰。多くの人のAI活用をサポートしている。</p>
+                </div>
+                
+                <div class="speaker-card">
+                    <div class="speaker-avatar">?</div>
+                    <h3>実践者の皆さん</h3>
+                    <p class="role">AI活用実践者</p>
+                    <p>デジタルme育成BootCAMPの参加者や、AI活用を日常的に実践している方々に登壇いただく予定です。それぞれの職業や生活スタイルに合わせた、リアルな活用法をお聞きいただけます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会場情報 -->
+    <section class="section venue">
+        <div class="container">
+            <div class="section-header">
+                <h2>会場情報</h2>
+                <p class="section-subtitle">アクセス良好な福岡のAIPカフェで開催</p>
+            </div>
+            
+            <div class="venue-info">
+                <div class="venue-details">
+                    <h3>AIPカフェ</h3>
+                    <p>福岡市内のコワーキングスペース併設カフェ。AI・テクノロジー関連のイベントを多数開催している、学びと交流の場として人気のスポット。</p>
+                    
+                    <ul class="venue-features">
+                        <li><i class="fas fa-wifi"></i>高速Wi-Fi完備</li>
+                        <li><i class="fas fa-tv"></i>プロジェクター・大型モニター</li>
+                        <li><i class="fas fa-coffee"></i>ドリンク・軽食あり</li>
+                        <li><i class="fas fa-car"></i>駐車場完備</li>
+                        <li><i class="fas fa-train"></i>駅から徒歩5分</li>
+                    </ul>
+                </div>
+                
+                <div class="venue-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>詳細な住所・アクセス情報は<br>参加申込後にご案内いたします</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 参加申込 -->
+    <section class="section registration" id="registration">
+        <div class="container">
+            <div class="section-header">
+                <h2>参加申込</h2>
+                <p class="section-subtitle">AI活用の実践を学び、仲間と出会いませんか？</p>
+            </div>
+            
+            <div class="registration-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">お名前 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">メールアドレス *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">AI活用の経験</label>
+                        <textarea id="experience" name="experience" placeholder="ChatGPTやその他AIツールの使用経験、今回の勉強会で知りたいことなど、簡単にお書きください"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        参加申込を送信
+                    </button>
+                </form>
+                
+                <p style="margin-top: var(--spacing-lg); font-size: 0.9rem; opacity: 0.8;">
+                    ※ 参加費は無料です。会場の詳細住所は申込後にご連絡いたします。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI am I. All rights reserved.</p>
+            <p>主催：Masaya（AI活用サポーター）</p>
+        </div>
+    </footer>
+
+    <script>
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // フォーム送信処理（実際の実装では適切なバックエンドに送信）
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('参加申込ありがとうございます！詳細な会場情報をメールでお送りいたします。');
+        });
+
+        // ヘッダーのスクロール効果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

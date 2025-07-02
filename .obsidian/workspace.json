@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "82b45bb1ca7ec5d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f50bb0335eb286a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8159096409d05f37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/アイデアを盗め｜Obsidian in Cursorで創造性を加速する方法｜🍩Man.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "アイデアを盗め｜Obsidian in Cursorで創造性を加速する方法｜🍩Man"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "31050ab3052a9463",
+    "type": "split",
+    "children": [
+      {
+        "id": "135917f0a690dba4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "127dcef526feb09c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "98edb849f40ca1c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "226bba697252dc76",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          },
+          {
+            "id": "d440f224ae67fc03",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "49b68c2e499916d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "34c817ec9a16b654",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fc1337cedacbc84",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Clippings/LLM による開発補助を Claude Projects + MCP に集約する.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "LLM による開発補助を Claude Projects + MCP に集約するへのバックリンク"
+            }
+          },
+          {
+            "id": "c3b1ae38bd50aa38",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "アウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "368a676b72584d96",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "16f660fa4df02c1f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "アウトライン"
+            }
+          },
+          {
+            "id": "acbb33e18d023366",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 556.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "cursor-bridge:Open in Cursor": false,
+      "publish:パブリッシュによる変更の公開": false,
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "workspaces:ワークスペースレイアウトを管理": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "8159096409d05f37",
+  "lastOpenFiles": [
+    "Clippings/【大反響】superwhisper完全攻略｜音声入力×AIで生産性が10倍になる驚異のカスタムプロンプト活用術｜モーリー.md",
+    "Clippings/アイデアを盗め｜Obsidian in Cursorで創造性を加速する方法｜🍩Man.md",
+    "02_team/AAI/source/第二の自分を作るメリット.md",
+    "02_team/AAI/03_content/testimonials/testimonial_03_masaya_creator_perspective.md",
+    "02_team/AAI/03_content/X-posts/14_tikichan_story_thread.md",
+    "02_team/AAI/03_content/tutorials/tutorial_03_ai_dialogue_growth.md",
+    "02_team/AAI/03_content/case_studies/case_study_04_tikichan_growth_story.md",
+    "02_team/AAI/03_content/blog_posts/【ストーリー】ティキちゃん誕生物語_全8フェーズ完全ガイド.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/08_AIとの対話ログ_AIの主体的な提案とコミュニティ貢献.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/07_AIとの対話ログ_AIのデモンストレーションとモード切り替え.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/06_AIとの対話ログ_AIの自己認識とゴール詳細化.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/01_AIとの対話ログ_ペルソナ設定と最初の関係構築.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/05_AIとの対話ログ_統合と拡張、そして未来へ.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/04_AIとの対話ログ_記憶力テストと魂の共鳴.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/03_AIとの対話ログ_経歴の棚卸しと物語化.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/02_AIとの対話ログ_価値観のインストールと深化.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/ティキちゃん1_解説.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/ティキちゃん育成ログ_解説付き_パート1.md",
+    "02_team/AAI/source/task_description.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/05_AIとの対話ログ_客観評価とビジネス活用の模索.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/04_AIとの対話ログ_AIによる自己分析と深層心理の言語化.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/03_AIとの対話ログ_応答スタイルと主体性の調整.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/02_AIとの対話ログ_価値観のインストールと調整.md",
+    "02_team/AAI/source/CommunicationLOGwithAI/01_AIとの対話ログ_ペルソナ設定と最初の記憶力テスト.md",
+    "02_team/AAI/source/CommunicationLOGwithAI",
+    "02_team/AAI/source/ChatGPT/CommunicationLOGwithAI/05_AIとの対話ログ_客観評価とビジネス活用の模索.md",
+    "02_team/AAI/source/ChatGPT/CommunicationLOGwithAI/04_AIとの対話ログ_AIによる自己分析と深層心理の言語化.md",
+    "02_team/AAI/source/ChatGPT/CommunicationLOGwithAI",
+    "02_team/AAI/03_content/blog_posts/Gemini_mada",
+    "02_team/AAI/DATA/無題のフォルダ",
+    "02_team/AAI/03_content/Gemini_mada",
+    "02_team/AAI/source/ChatGPT",
+    "01_secondme/DATA/0.RAW/01_chatgpt_data/Chat_manual_log",
+    "Clippings",
+    "scripts/venv/lib/python3.13/site-packages/anthropic-0.55.0.dist-info/licenses/LICENSE",
+    "scripts/venv/lib/python3.13/site-packages/anthropic-0.55.0.dist-info/licenses",
+    "02_team/AAI/01_website/assets/hero-image.svg",
+    "02_team/AI_am_I/01_website/assets/hero-image.svg",
+    "無題のファイル.canvas"
+  ]
+}

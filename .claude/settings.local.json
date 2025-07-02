@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rdlp.jp)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:docs.anthropic.com)"
+    ],
+    "deny": []
+  }
+}
