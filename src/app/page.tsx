@@ -7,8 +7,12 @@ export default function Home() {
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-6 flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">M</span>
+            <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-lg">
+              <img 
+                src="https://res.cloudinary.com/dg3mdcuju/image/upload/v1751444000/masayatoai.jpg" 
+                alt="Masayaのプロフィール写真" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
