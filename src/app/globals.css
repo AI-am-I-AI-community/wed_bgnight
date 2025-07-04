@@ -2,62 +2,221 @@
 @tailwind components;
 @tailwind utilities;
 
+/* カスタムフォント */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ベースレイヤー */
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* 見出しの最適化 */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+    line-height: 1.2;
+  }
+  
+  h1 { @apply text-4xl md:text-5xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+  h4 { @apply text-xl md:text-2xl; }
+  
+  /* 段落とテキストの最適化 */
+  p {
+    @apply leading-relaxed;
+  }
+  
+  /* フォーカス状態の統一 */
+  *:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
   }
 }
 
+/* コンポーネントレイヤー */
 @layer components {
+  /* 洗練されたカード */
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:shadow-md hover:border-gray-200;
+  }
+  
+  .card-elevated {
+    @apply bg-white rounded-xl shadow-md border border-gray-100 p-8 transition-all duration-300 hover:shadow-lg;
+  }
+  
+  /* モダンなボタンシステム */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors;
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 shadow-sm hover:shadow-md;
   }
   
   .btn-secondary {
-    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-700 font-medium py-2 px-4 rounded-lg transition-colors;
+    @apply bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 focus:ring-blue-500 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-ghost {
+    @apply text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:ring-blue-500;
+  }
+  
+  /* セクション */
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-alt {
+    @apply py-16 md:py-24 bg-gray-50;
+  }
+  
+  /* コンテナ */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* テキストスタイル */
+  .text-hero {
+    @apply text-4xl md:text-6xl font-bold tracking-tight text-gray-900;
+  }
+  
+  .text-lead {
+    @apply text-xl md:text-2xl text-gray-600 leading-relaxed;
+  }
+  
+  .text-body {
+    @apply text-gray-600 leading-relaxed;
+  }
+  
+  /* グラデーション背景 */
+  .bg-gradient-subtle {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  }
+  
+  /* アニメーション */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  /* ホバーエフェクト */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  /* アイコンスタイル */
+  .icon-wrapper {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center;
+  }
+  
+  .icon-wrapper-lg {
+    @apply w-16 h-16 rounded-xl flex items-center justify-center;
+  }
+  
+  /* 区切り線 */
+  .divider {
+    @apply border-t border-gray-200 my-8;
+  }
+  
+  /* バッジ */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .badge-primary {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  /* リスト */
+  .list-styled {
+    @apply space-y-3;
+  }
+  
+  .list-styled li {
+    @apply flex items-start space-x-3;
+  }
+  
+  .list-styled li::before {
+    content: "•";
+    @apply text-blue-500 font-bold mt-1;
+  }
+  
+  /* プロフィール画像 */
+  .profile-image {
+    @apply w-32 h-32 rounded-full shadow-lg ring-4 ring-white;
+  }
+  
+  /* ナビゲーション */
+  .nav-link {
+    @apply text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200;
+  }
+  
+  .nav-link-active {
+    @apply text-blue-600 bg-blue-50 rounded-lg;
+  }
+}
+
+/* アニメーション定義 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* レスポンシブ最適化 */
+@media (max-width: 640px) {
+  .section {
+    @apply py-12;
+  }
+  
+  .section-alt {
+    @apply py-12;
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+    @apply p-4;
   }
   
-  .prose-custom {
-    @apply prose prose-gray max-w-none;
-  }
-  
-  .prose-custom h1 {
-    @apply text-3xl font-bold text-gray-900 mb-4;
-  }
-  
-  .prose-custom h2 {
-    @apply text-2xl font-semibold text-gray-800 mb-3 mt-8;
-  }
-  
-  .prose-custom h3 {
-    @apply text-xl font-semibold text-gray-800 mb-2 mt-6;
-  }
-  
-  .prose-custom p {
-    @apply text-gray-700 leading-relaxed mb-4;
-  }
-  
-  .prose-custom ul {
-    @apply list-disc list-inside mb-4 text-gray-700;
-  }
-  
-  .prose-custom ol {
-    @apply list-decimal list-inside mb-4 text-gray-700;
-  }
-  
-  .prose-custom blockquote {
-    @apply border-l-4 border-primary-500 pl-4 italic text-gray-600 mb-4;
-  }
-  
-  .prose-custom code {
-    @apply bg-gray-100 text-gray-800 px-1 py-0.5 rounded text-sm;
-  }
-  
-  .prose-custom pre {
-    @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+  .card-elevated {
+    @apply p-6;
   }
 } 
