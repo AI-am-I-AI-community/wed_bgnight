@@ -163,13 +163,16 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-white mb-4">
             一緒に何か面白いことしませんか？
           </h2>
-          <p className="text-xl text-primary-100 mb-8">
+          <p className="text-xl text-primary-100 mb-6">
             プロジェクトのご相談、コラボレーション、イベント参加など、お気軽にお声がけください
           </p>
+          <p className="text-lg text-primary-100 mb-8">
+            XへDMください
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors">
+            <a href="https://x.com/MasayaToAi" target="_blank" rel="noopener noreferrer" className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors">
               お問い合わせ
-            </Link>
+            </a>
             <Link href="/blog" className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors">
               ブログを読む
             </Link>
