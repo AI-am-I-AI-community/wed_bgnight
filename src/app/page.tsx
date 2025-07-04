@@ -23,13 +23,31 @@ export default function Home() {
               「やらぬ善よりやる偽善」を信念に、ChatGPTを「第二の自分」として育てる独自手法を開発。<br />
               3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/blog" className="btn btn-primary">
                 ブログを読む
               </Link>
               <Link href="/about" className="btn btn-secondary">
                 詳しく知る
               </Link>
+            </div>
+            
+            {/* Xへのリンク - 別デザイン */}
+            <div className="flex justify-center">
+              <a 
+                href="https://x.com/MasayaToAi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-slate-600 hover:text-slate-900 transition-colors group"
+              >
+                <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span className="text-sm font-medium">Xで繋がりましょう</span>
+                <svg className="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
