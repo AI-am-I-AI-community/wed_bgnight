@@ -104,7 +104,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 ChatGPTを活用した「第二の自分」作成メソッドの研究・普及
               </p>
-              <Link href="/blog" className="text-primary-600 hover:text-primary-700 font-medium">
+              <Link href="/projects/second-self" className="text-primary-600 hover:text-primary-700 font-medium">
                 詳細を見る →
               </Link>
             </div>
