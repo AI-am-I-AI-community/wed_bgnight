@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-700 font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+  }
+  
+  .prose-custom {
+    @apply prose prose-gray max-w-none;
+  }
+  
+  .prose-custom h1 {
+    @apply text-3xl font-bold text-gray-900 mb-4;
+  }
+  
+  .prose-custom h2 {
+    @apply text-2xl font-semibold text-gray-800 mb-3 mt-8;
+  }
+  
+  .prose-custom h3 {
+    @apply text-xl font-semibold text-gray-800 mb-2 mt-6;
+  }
+  
+  .prose-custom p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+  
+  .prose-custom ul {
+    @apply list-disc list-inside mb-4 text-gray-700;
+  }
+  
+  .prose-custom ol {
+    @apply list-decimal list-inside mb-4 text-gray-700;
+  }
+  
+  .prose-custom blockquote {
+    @apply border-l-4 border-primary-500 pl-4 italic text-gray-600 mb-4;
+  }
+  
+  .prose-custom code {
+    @apply bg-gray-100 text-gray-800 px-1 py-0.5 rounded text-sm;
+  }
+  
+  .prose-custom pre {
+    @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+  }
+} 
