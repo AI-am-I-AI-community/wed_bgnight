@@ -19,8 +19,9 @@ export default function Home() {
             こんにちは、<span className="text-primary-600">Masaya</span>です
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            テクノロジーとクリエイティブの力で、新しい価値を創造するフリーランサー。
-            AIツール活用、ウェブ開発、イベント企画などを通じて、人々の可能性を広げています。
+            福岡在住35歳のAI活用サポーター・クリエイター。「やらぬ善よりやる偽善」を信念に、
+            ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、
+            ボードゲーム制作を通じて、人々の可能性を広げています。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/blog" className="btn-primary">
@@ -52,9 +53,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">ウェブ開発</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">3Dモデリング・制作</h3>
               <p className="text-gray-600">
-                Next.js、React、TypeScriptを使ったモダンなウェブアプリケーション開発
+                Blenderを使ったキャラクターモデリング、3Dプリンター活用、デジタルコンテンツ制作
               </p>
             </div>
             
@@ -66,7 +67,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">AI活用支援</h3>
               <p className="text-gray-600">
-                ChatGPT、Claude等のAIツールを活用した業務効率化コンサルティング
+                ChatGPTを「第二の自分」として育てる独自手法。音声思考整理、自己理解促進コーチング
               </p>
             </div>
             
@@ -76,9 +77,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">イベント企画</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">国際交流・コミュニティ</h3>
               <p className="text-gray-600">
-                ボードゲーム制作会、AI勉強会など、コミュニティイベントの企画・運営
+                福岡での国際交流イベント主催、ボードゲーム制作会（毎週水曜）、AI勉強会の企画・運営
               </p>
             </div>
           </div>
@@ -141,7 +142,7 @@ export default function Home() {
             <div className="card hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Vtuber活動</h3>
               <p className="text-gray-600 mb-4">
-                テト（オリジナルキャラクター）としての配信・コンテンツ制作
+                ティキちゃん（猫妖精キャラクター）としての配信・コンテンツ制作
               </p>
               <Link href="/vtuber" className="text-primary-600 hover:text-primary-700 font-medium">
                 詳細を見る →
@@ -151,7 +152,7 @@ export default function Home() {
             <div className="card hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">その他プロジェクト</h3>
               <p className="text-gray-600 mb-4">
-                3Dモデリング、音楽制作、ドローン撮影など
+                ヨーヨー、ギター演奏、ドローン撮影、ペット撮影など多彩な趣味活動
               </p>
               <Link href="/portfolio" className="text-primary-600 hover:text-primary-700 font-medium">
                 ポートフォリオを見る →
@@ -168,10 +169,11 @@ export default function Home() {
             一緒に何か面白いことしませんか？
           </h2>
           <p className="text-xl text-primary-100 mb-6">
-            プロジェクトのご相談、コラボレーション、イベント参加など、お気軽にお声がけください
+            AI×自己理解のご相談、ボードゲーム制作会参加、3Dモデリングコラボ、
+            国際交流イベント企画など、お気軽にお声がけください
           </p>
           <p className="text-lg text-primary-100 mb-8">
-            XへDMください
+            XへDMください ♪
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://x.com/MasayaToAi" target="_blank" rel="noopener noreferrer" className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg transition-colors">
