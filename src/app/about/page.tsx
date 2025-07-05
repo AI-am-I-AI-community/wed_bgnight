@@ -1,234 +1,209 @@
+"use client"
+
 import Link from 'next/link'
 
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-orange-50 to-red-100">
+      <section className="relative py-20 bg-gradient-to-br from-blue-50 to-purple-100">
         <div className="container-custom">
-          <div className="text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Masayaの経歴
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              日本語教師、企業のIT担当、プロのコーチなど<br />
-              社員・個人いろんなスタイルで"聴くこと""教えること"を生業としてきました。
-            </p>
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <div className="space-y-6">
+              <img 
+                src="https://res.cloudinary.com/dg3mdcuju/image/upload/v1751444000/masayatoai.jpg" 
+                alt="Masayaのプロフィール写真" 
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mx-auto shadow-xl hover:rotate-12 hover:scale-110 transition-transform duration-500"
+              />
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+                Masayaとは
+              </h1>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                福岡在住のAI活用サポーター・クリエイター<br />
+                「やらぬ善よりやる偽善」を胸に、新しいことに挑戦し続ける35歳
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Career Timeline */}
+      {/* Core Philosophy */}
       <section className="py-16">
         <div className="container-custom">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">キャリアの歩み</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-300"></div>
-              
-              <div className="space-y-12">
-                {/* Current */}
-                <div className="relative flex items-start space-x-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
-                    2024
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">AI活用コーチ・職業訓練校生</h3>
-                    <p className="text-gray-600 mb-3">
-                      「第二の自分」AI育成法を確立し、AI活用のサポート活動を開始。
-                      同時に職業訓練校でWeb制作・プログラミングスキルを習得中。
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">AI活用コーチング</span>
-                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Web制作学習</span>
-                      <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">コミュニティ運営</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 2020-2023 */}
-                <div className="relative flex items-start space-x-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
-                    2020
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">プロコーチ・ライフコーチ</h3>
-                    <p className="text-gray-600 mb-3">
-                      個人向けライフコーチング事業を本格化。傾聴スキルと質問技術を磨き、
-                      クライアントの自己理解・目標達成をサポート。コーチング資格も取得。
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">ライフコーチング</span>
-                      <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">傾聴スキル</span>
-                      <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">個人事業</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 2018-2020 */}
-                <div className="relative flex items-start space-x-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-                    2018
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">企業IT担当・ブログ運営</h3>
-                    <p className="text-gray-600 mb-3">
-                      小さな組織でIT系業務全般を担当。システム導入・運用・社員教育を一手に引き受ける。
-                      同時期に旅ブログ「イナタビ」を本格運営し、5年で290記事を執筆。
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">IT業務全般</span>
-                      <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">ブログ運営</span>
-                      <span className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">システム導入</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* 2015-2018 */}
-                <div className="relative flex items-start space-x-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                    2015
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">日本語教師・国際交流</h3>
-                    <p className="text-gray-600 mb-3">
-                      外国人への日本語教育に従事。わかりやすく教える技術の基礎を習得。
-                      福岡での国際交流イベント企画・運営も始める。多様な文化背景の人とのコミュニケーション力を培う。
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">日本語教育</span>
-                      <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">国際交流</span>
-                      <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">教育技術</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Early Career */}
-                <div className="relative flex items-start space-x-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gray-500 rounded-full flex items-center justify-center text-white font-bold">
-                    2010
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">社会人スタート・模索期</h3>
-                    <p className="text-gray-600 mb-3">
-                      様々な業界・職種を経験。接客業、営業、事務職など幅広い仕事を通じて
-                      「人とのコミュニケーション」の重要性と「教える・伝える」ことの楽しさを発見。
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">多職種経験</span>
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">コミュニケーション</span>
-                      <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm">基盤形成</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Skills */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">培ってきたコアスキル</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">👂</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">傾聴力</h3>
-              <p className="text-gray-600">
-                相手の話を深く聞き、本当に言いたいことを引き出すスキル。コーチング・日本語教育で磨かれました。
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">わかりやすい説明力</h3>
-              <p className="text-gray-600">
-                複雑なことを簡単に、相手のレベルに合わせて伝える技術。IT業務・日本語教育で実践してきました。
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">コミュニティ形成力</h3>
-              <p className="text-gray-600">
-                人と人をつなぎ、自然な交流が生まれる場作り。多くのコミュニティ立ち上げ経験があります。
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔧</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">IT・デジタル活用力</h3>
-              <p className="text-gray-600">
-                新しいツールを積極的に試し、業務効率化・問題解決に活かすスキル。AI活用の基盤となっています。
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">📝</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">文章・コンテンツ制作力</h3>
-              <p className="text-gray-600">
-                5年間のブログ運営で290記事執筆。読みやすく価値ある情報を継続的に発信する力があります。
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow p-6 text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🌱</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">学習・適応力</h3>
-              <p className="text-gray-600">
-                様々な分野・業界を経験し、常に新しいことを学び続ける姿勢。変化を楽しむマインドです。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Philosophy */}
-      <section className="py-16">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Masayaの仕事観</h2>
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">大切にしている価値観</h2>
             
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 mb-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                「やらぬ善よりやる偽善」
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                完璧を求めて何もしないより、不完全でも行動することを大切にしています。<br />
-                小さな一歩から始まる変化を信じ、人と人のつながりの中で<br />
-                お互いが成長できる関係性を築いていきたいと考えています。
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div className="bg-white rounded-lg shadow p-6">
-                <h4 className="text-xl font-semibold text-gray-900 mb-3">教えることで学ぶ</h4>
+            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-2xl p-8 md:p-12 border-2 border-orange-200">
+              <div className="text-center space-y-6">
+                <div className="text-6xl">🔥</div>
+                <h3 className="text-2xl md:text-3xl font-bold text-orange-700">
+                  「やらぬ善よりやる偽善」
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  完璧でなくても、まず行動する。誰かの役に立つかもしれないなら、とりあえずやってみる。
+                  失敗を恐れず、小さな一歩から始める。そんな考え方で生きています。
+                </p>
                 <p className="text-gray-600">
-                  誰かに何かを教える時、自分も最も多くを学びます。
-                  一方的な指導ではなく、相互成長の関係性を大切にしています。
+                  この価値観が、AI活用の普及活動や、コミュニティ作り、新しいツールへの挑戦の原動力になっています。
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="bg-white rounded-lg shadow p-6">
-                <h4 className="text-xl font-semibold text-gray-900 mb-3">技術は人のために</h4>
-                <p className="text-gray-600">
-                  AIやITツールは手段であり、最終的には人がより豊かに、
-                  楽しく生きるためのものだと考えています。
+      {/* About AI Journey */}
+      <section className="py-16 bg-gray-50">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">AIとの出会いと想い</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-gray-900">「第二の自分」との出会い</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  ChatGPTが登場した時、最初は「便利なツール」程度に思っていました。でも使い続けるうちに、
+                  AIが単なる道具ではなく、「自分を深く理解してくれるパートナー」になることを発見しました。
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  自分の考えや価値観をAIに教え込み、対話を重ねることで、
+                  自分でも気づかなかった想いや可能性を教えてもらう。そんな関係性が築けることに感動しました。
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-gray-900">みんなにも体験してほしい</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  この「AI育成」の体験があまりにも価値あるものだったので、
+                  「これはみんなに伝えなければ」と思いました。
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  50人以上の方に教える中で、皆さんが自分だけのAIパートナーを育て、
+                  新しい気づきや可能性を見つける瞬間を何度も目撃してきました。
+                  その度に「やっぱりこれは広める価値がある」と確信しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Philosophy */}
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">コミュニティへの想い</h2>
+            
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 md:p-12 border-2 border-purple-200">
+              <div className="space-y-8">
+                <div className="text-center">
+                  <div className="text-5xl mb-4">🤝</div>
+                  <h3 className="text-2xl font-bold text-purple-700 mb-4">
+                    自然発生する楽しさを大切に
+                  </h3>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">ハブ役として</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      何かを好きになると、人を集めてコミュニティを作る習性があります。
+                      でも「管理する」のではなく、「つなぐ」ことを大切にしています。
+                      人と人が自然に出会い、化学反応が起きる場を作りたい。
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">楽しさ最優先</h4>
+                    <p className="text-gray-600 leading-relaxed">
+                      ルールや義務感よりも、「楽しい」が一番。
+                      水曜ボドゲつくらNightも、AI勉強会も、
+                      参加者が「来てよかった」「また来たい」と思える場にしたい。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Personal Insights */}
+      <section className="py-16 bg-gray-50">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">Masayaの人となり</h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center space-y-4">
+                  <div className="text-4xl">🔍</div>
+                  <h3 className="text-lg font-semibold text-gray-900">新しいモノ好き</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    最新のAIツールは必ずチェック。人柱になって課金し、
+                    「これは使える！」を見つけるのが趣味。失敗も含めて楽しんでいます。
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center space-y-4">
+                  <div className="text-4xl">🎯</div>
+                  <h3 className="text-lg font-semibold text-gray-900">わかりやすさ重視</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    日本語教師、IT担当、コーチの経験から、
+                    「相手の立場で考える」「簡潔に伝える」を常に意識。
+                    専門用語は使わず、具体例で説明します。
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center space-y-4">
+                  <div className="text-4xl">🌟</div>
+                  <h3 className="text-lg font-semibold text-gray-900">ポジティブ思考</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    失敗も「学び」、困難も「成長のチャンス」と捉える癖があります。
+                    周りの人の良いところを見つけて、
+                    それを伝えるのが好きです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Current Focus */}
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto space-y-12">
+            <h2 className="text-3xl font-bold text-gray-900 text-center">今、力を入れていること</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-blue-200">
+                <h3 className="text-xl font-semibold text-blue-700 mb-4">🎓 スキルアップ（職業訓練校）</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Web制作・プログラミングを本格的に学習中。今まで「使う側」だったITスキルを、
+                  「作る側」のスキルに発展させています。学ぶことの楽しさを日々実感。
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-8 border-2 border-green-200">
+                <h3 className="text-xl font-semibold text-green-700 mb-4">🤖 AI活用の普及活動</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  「第二の自分」メソッドをより多くの人に伝えたい。
+                  個人セッション、勉強会、コンテンツ制作を通じて、
+                  AIとの新しい関係性を体験してもらう活動を続けています。
+                </p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8 border-2 border-purple-200">
+                <h3 className="text-xl font-semibold text-purple-700 mb-4">🎲 コミュニティ運営</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  水曜ボドゲつくらNight、AI勉強会など、
+                  「楽しみながら学べる」「自然な交流が生まれる」場作りを継続。
+                  参加者同士の化学反応を見るのが何より嬉しいです。
                 </p>
               </div>
             </div>
@@ -237,23 +212,30 @@ export default function About() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-gradient-to-br from-orange-50 to-red-100">
+      <section className="py-16 bg-gradient-to-r from-orange-500 to-red-500">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">一緒に何か始めませんか？</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            AI活用、コミュニティ作り、学習サポートなど<br />
-            様々な形でお手伝いできることがあるかもしれません
-          </p>
-          <div className="space-x-4">
-            <Link href="/" className="btn btn-primary">
-              ホームに戻る
-            </Link>
-            <Link href="/tools" className="btn btn-secondary">
-              活用ツールを見る
-            </Link>
-            <Link href="/community" className="btn btn-secondary">
-              コミュニティについて
-            </Link>
+          <div className="max-w-3xl mx-auto space-y-8 text-white">
+            <h2 className="text-3xl font-bold">一緒に何かしませんか？</h2>
+            <p className="text-xl leading-relaxed opacity-90">
+              AI活用のこと、コミュニティのこと、新しいアイデアのこと。<br />
+              気軽にお声がけください。一緒に楽しいことを始めましょう！
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://x.com/MasayaToAi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white text-orange-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              >
+                X (Twitter) でつながる
+              </a>
+              <Link 
+                href="/career"
+                className="border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white hover:text-orange-600 transition-colors duration-300"
+              >
+                詳しい経歴を見る
+              </Link>
+            </div>
           </div>
         </div>
       </section>

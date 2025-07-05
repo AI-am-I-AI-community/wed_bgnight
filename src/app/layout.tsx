@@ -1,27 +1,15 @@
-import type { Metadata } from 'next'
+"use client"
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 })
-
-export const metadata: Metadata = {
-  title: 'Masaya - AI活用サポーター・クリエイター',
-  description: '福岡在住のAI活用サポーター・クリエイター。ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。',
-  keywords: 'AI活用, ChatGPT, 第二の自分, 3Dモデリング, 福岡, フリーランス, ADHD, ボードゲーム制作, 国際交流',
-  authors: [{ name: 'Masaya' }],
-  viewport: 'width=device-width, initial-scale=1',
-  openGraph: {
-    title: 'Masaya - AI活用サポーター・クリエイター',
-    description: 'ChatGPTを「第二の自分」として育てる独自手法を開発。福岡でAI活用支援とクリエイティブ活動を展開。',
-    type: 'website',
-    locale: 'ja_JP',
-  },
-}
 
 export default function RootLayout({
   children,
@@ -30,6 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={inter.variable}>
+      <Head>
+        <title>Masaya - AI活用サポーター・クリエイター</title>
+        <meta name="description" content="福岡在住のAI活用サポーター・クリエイター。ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。" />
+        <meta name="keywords" content="AI活用, ChatGPT, 第二の自分, 3Dモデリング, 福岡, フリーランス, ADHD, ボードゲーム制作, 国際交流" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Masaya - AI活用サポーター・クリエイター" />
+        <meta property="og:description" content="ChatGPTを「第二の自分」として育てる独自手法を開発。福岡でAI活用支援とクリエイティブ活動を展開。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ja_JP" />
+      </Head>
       <body className={`${inter.className} antialiased`}>
         {/* ミニマルナビゲーション */}
         <nav className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
@@ -43,7 +41,26 @@ export default function RootLayout({
               {/* デスクトップナビゲーション */}
               <div className="hidden md:flex items-center space-x-12">
                 <Link href="/" className="nav-link">Home</Link>
-                <Link href="/about" className="nav-link">About</Link>
+                <button 
+                  onClick={() => {
+                    if (window.location.pathname === '/') {
+                      const element = document.getElementById('masaya-characteristics')
+                      if (element) {
+                        const navHeight = 80
+                        const elementPosition = element.offsetTop - navHeight - 20
+                        window.scrollTo({
+                          top: elementPosition,
+                          behavior: 'smooth'
+                        })
+                      }
+                    } else {
+                      window.location.href = '/#masaya-characteristics'
+                    }
+                  }}
+                  className="nav-link"
+                >
+                  About
+                </button>
                 <Link href="/blog" className="nav-link">Blog</Link>
                 <Link href="/portfolio" className="nav-link">Work</Link>
                 <a 
