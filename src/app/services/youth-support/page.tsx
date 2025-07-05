@@ -20,7 +20,7 @@ export default function YouthSupportPage() {
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-700 leading-relaxed">
                 社会的養護のもとで育った若者たちが、自分らしく社会で活躍できるよう、
-                ボードゲームを通じた居場所づくりと支援活動を行っています。
+                ボードゲームを通じた居場所づくりに関わっています。
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function YouthSupportPage() {
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold text-purple-600">NPO団体での月一ボードゲーム会</h3>
                     <p className="text-gray-700 leading-relaxed">
-                      社会的養護のユースたちが集まり、ボードゲームを通じて自然な交流を楽しむ場を提供しています。ゲームを通じて、コミュニケーション力や問題解決能力を育みながら、同じ境遇の仲間との絆を深めています。
+                      社会的養護のユースたちとボードゲームや食事会を通じて安心できる交流の場づくりしてます。何かあった時に頼ってもらえる関係性を作り、早期に支援に繋げられるように。
                     </p>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ export default function YouthSupportPage() {
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold text-blue-600">社会的養護施設での週一勤務</h3>
                     <p className="text-gray-700 leading-relaxed">
-                      社会的養護施設で週に一度勤務し、子どもたちや若者たちの日常をサポートしています。現場での経験を通じて、一人ひとりの個性や可能性を理解し、それぞれに合った支援方法を模索しています。
+                      社会的養護施設で週1日勤務し、ユースの日常にも関わってます。一人ひとりの個性や可能性を感じながら、より人生楽しむきっかけになれたら嬉しい。
                     </p>
                   </div>
                 </div>
@@ -79,8 +79,8 @@ export default function YouthSupportPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">自然な学び</h3>
-                    <p className="text-gray-600 text-sm">ボードゲームを通じて、楽しみながら自然にスキルを身につける</p>
+                    <h3 className="text-lg font-semibold text-gray-900">一緒に楽しむ</h3>
+                    <p className="text-gray-600 text-sm">個々の課題でなく”可能性”を信じ共に楽しむ</p>
                   </div>
                   
                   <div className="text-center space-y-4">
@@ -99,8 +99,8 @@ export default function YouthSupportPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">可能性の発見</h3>
-                    <p className="text-gray-600 text-sm">一人ひとりの個性と可能性を大切に</p>
+                    <h3 className="text-lg font-semibold text-gray-900">自然な学び</h3>
+                    <p className="text-gray-600 text-sm">何気ない会話、遊び、活動を通し自然に学び合う</p>
                   </div>
                 </div>
               </div>
@@ -112,11 +112,23 @@ export default function YouthSupportPage() {
                 <div className="text-center space-y-4">
                   <h2 className="text-3xl font-bold text-gray-900">将来の目標</h2>
                   <p className="text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                    人生の一つの目標として、社会的養護のユースたちの支援にも繋がるボードゲームカフェの開業を目指しています。
+                    人生の一つの目標として、社会的養護のユースたちの支援にも繋がる。ボードゲームカフェの開業を目指しています。
                   </p>
                 </div>
                 
-                <div className="max-w-3xl mx-auto space-y-6">
+                <div className="max-w-4xl mx-auto space-y-8">
+                  {/* ビジョン画像 */}
+                  <div className="text-center">
+                    <div className="inline-block rounded-2xl overflow-hidden shadow-2xl shadow-purple-200/50 hover:shadow-3xl hover:shadow-purple-300/50 transition-all duration-500 hover:scale-105">
+                      <img 
+                        src="https://res.cloudinary.com/dg3mdcuju/image/upload/v1751684284/Gemini_Generated_Image_1_i2nw7d.jpg" 
+                        alt="支援型ボードゲームカフェのビジョン" 
+                        className="w-full max-w-2xl h-auto object-cover"
+                      />
+                    </div>
+                    <p className="text-sm text-gray-600 mt-4 italic">思い描く支援型ボードゲームカフェのイメージ</p>
+                  </div>
+                  
                   <div className="bg-white rounded-xl p-6 shadow-sm">
                     <h3 className="text-xl font-semibold text-purple-600 mb-4">支援型ボードゲームカフェのビジョン</h3>
                     <ul className="text-gray-700 leading-relaxed space-y-3">
@@ -134,7 +146,7 @@ export default function YouthSupportPage() {
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="text-purple-500 mt-1">•</span>
-                        <span>ボードゲームを通じた社会性・コミュニケーション力の向上</span>
+                        <span>ボードゲームを通じたあたたかい人との繋がり</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <span className="text-purple-500 mt-1">•</span>
@@ -150,7 +162,7 @@ export default function YouthSupportPage() {
             <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
               <div className="space-y-8">
                 <div className="text-center">
-                  <h2 className="text-3xl font-bold text-gray-900">Masayaからのメッセージ</h2>
+                  <h2 className="text-3xl font-bold text-gray-900">想い</h2>
                 </div>
                 
                 <div className="max-w-3xl mx-auto space-y-6">
@@ -163,15 +175,15 @@ export default function YouthSupportPage() {
                   </p>
                   
                   <p className="text-gray-700 leading-relaxed">
-                    ボードゲームには不思議な力があります。ゲームを通じて自然に笑顔が生まれ、コミュニケーションが生まれ、時には真剣に考える姿が見られます。そんな瞬間に、その人の本当の魅力が輝いて見えるのです。
+                    ボードゲームには不思議な力があります。ゲームを通じて自然に笑顔が生まれ、コミュニケーションが生まれます。そうやってそれぞれの背景関係なしに繋がれる楽しさがあります。
                   </p>
                   
                   <p className="text-gray-700 leading-relaxed">
-                    将来のボードゲームカフェは、単なる事業ではなく、社会全体で若者たちを支える仕組みの一部になりたいと考えています。地域の人々と自然に交流できる場所、そして若者たちが自分の可能性を発見できる場所を作りたいのです。
+                    思い描いてるボードゲームカフェは、単なる事業ではなく、社会全体で若者たちを支える仕組みの一部になりたいと考えています。地域の人々と自然に交流できる場所、そして若者たちが自分の可能性を発見できる場所を作りたいです。
                   </p>
                   
                   <p className="text-gray-700 leading-relaxed font-semibold">
-                    一人ひとりが自分らしく輝ける社会を、みんなで作っていきましょう。
+                    自分が好きなボードゲームで応援したい人たちが自然と繋がり支え合える場所ができたらどんなに嬉しいか、と思いを馳せています。
                   </p>
                 </div>
               </div>

@@ -5,29 +5,18 @@ import Link from 'next/link'
 export default function ToolsPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - 統一感のあるデザイン */}
-      <section className="min-h-screen relative bg-cover bg-center bg-no-repeat" style={{
+      {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
+      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751644296/AI-Powered_Journey_Image_k7nfzy.png')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-16">
+          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
             {/* Main Title */}
             <div className="space-y-12 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
-                <span className="block">活用中ツール&試したもの</span>
-                <span className="hidden md:block mt-6">人柱になって探求中</span>
-                <span className="block md:hidden mt-4">人柱になって</span>
-                <span className="block md:hidden mt-2 ml-8">探求中</span>
+                <span className="block">活用ツール</span>
               </h1>
               <div className="w-32 h-1 bg-black mx-auto drop-shadow-sm"></div>
-            </div>
-            
-            {/* Subtext */}
-            <div className="max-w-2xl animate-fade-in">
-              <p className="text-2xl md:text-3xl text-balance leading-relaxed text-black drop-shadow-md">
-                最新AIツール情報を追い続け、積極的に課金して人柱になっています。<br />
-                常に自分 or誰かにぴったりのAI・ITツールを探求！
-              </p>
             </div>
           </div>
         </div>
@@ -166,7 +155,10 @@ export default function ToolsPage() {
         <div className="container-custom">
           <div className="space-y-20">
             <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">試したツール（人柱レポート）</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                人柱レポート
+                <span className="block text-lg md:text-xl font-normal text-gray-300 mt-2">（試したツール）</span>
+              </h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             

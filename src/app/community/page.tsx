@@ -5,29 +5,18 @@ import Link from 'next/link'
 export default function CommunityPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - 統一感のあるデザイン */}
-      <section className="min-h-screen relative bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751644296/AI-Powered_Journey_Image_k7nfzy.png')"
+      {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
+      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751450179/aibg01_lbdyxt.jpg')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-16">
+          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
             {/* Main Title */}
             <div className="space-y-12 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
-                <span className="block">Masayaとコミュニティー</span>
-                <span className="hidden md:block mt-6">人と人のハブ役として</span>
-                <span className="block md:hidden mt-4">人と人のハブ役</span>
-                <span className="block md:hidden mt-2 ml-8">として</span>
+                <span className="block">コミュニティー</span>
               </h1>
               <div className="w-32 h-1 bg-black mx-auto drop-shadow-sm"></div>
-            </div>
-            
-            {/* Subtext */}
-            <div className="max-w-2xl animate-fade-in">
-              <p className="text-2xl md:text-3xl text-balance leading-relaxed text-black drop-shadow-md">
-                何かを好きになると人を集めコミュニティーを作る習性があります。<br />
-                人と人のハブ役。今はボドゲとAI活用の会してます。
-              </p>
             </div>
           </div>
         </div>
@@ -42,101 +31,57 @@ export default function CommunityPage() {
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
             </div>
             
-            <div className="space-y-12">
-              {/* Featured Community */}
-              <div className="group cursor-pointer bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-8 md:p-12 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-200/50 transition-all duration-500 hover:-translate-y-2">
-                <div className="grid-2col items-center gap-12">
-                  <div className="space-y-8">
-                    <div className="space-y-4">
-                      <div className="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-bold tracking-wider group-hover:bg-purple-600 transition-colors duration-300">
-                        🎲 毎週水曜開催
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold text-gray-900 group-hover:text-purple-700 transition-colors duration-300">
-                        水曜ボドゲつくらNight
-                      </h3>
-                    </div>
-                    <p className="text-lead leading-relaxed text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
-                      ボードゲーム制作を通じてクリエイティブな仲間が集まるコミュニティ。
-                      プロトタイプ作成からテストプレイまで、ゲーム作りの全工程を楽しく学べます。
-                    </p>
-                    <div className="bg-white/50 rounded-xl p-6 backdrop-blur-sm">
-                      <h4 className="font-semibold text-gray-900 mb-3">活動内容</h4>
-                      <ul className="text-sm text-gray-600 space-y-2">
-                        <li>• ゲームアイデア発想・ブラッシュアップ</li>
-                        <li>• プロトタイプ制作ワークショップ</li>
-                        <li>• 作品のテストプレイ・フィードバック</li>
-                        <li>• ゲーム制作に関する情報共有</li>
-                      </ul>
-                    </div>
-                    <div className="text-center">
-                      <span className="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-purple-600 transition-colors duration-300">
-                        参加者募集中
-                      </span>
-                    </div>
+            <div className="grid-3col gap-6">
+              {/* ボドゲつくらNight */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-400 hover:shadow-xl hover:shadow-purple-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+                    <span className="text-2xl">🎲</span>
                   </div>
-                  <div className="flex justify-end">
-                    <div className="w-80 h-80 border-2 border-purple-300 overflow-hidden rounded-2xl group-hover:border-purple-500 transition-all duration-500 group-hover:rotate-2 group-hover:scale-105">
-                      <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                        <span className="text-8xl">🎲</span>
-                      </div>
-                    </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">ボドゲつくらNight</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">毎週水曜開催。ボードゲーム制作を通じてクリエイティブな仲間が集まるコミュニティ。</p>
+                  </div>
+                  <div className="text-center">
+                    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-purple-600 transition-colors duration-300">
+                      参加者募集中
+                    </span>
                   </div>
                 </div>
               </div>
               
-              {/* Other Communities Grid */}
-              <div className="grid-2col gap-8">
-                <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-200/30 transition-all duration-500 hover:-translate-y-2">
-                  <div className="space-y-6">
-                    <div className="w-full h-48 bg-blue-100 rounded-2xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                      <div className="w-full h-full bg-gradient-to-br from-blue-400 to-indigo-400 flex items-center justify-center">
-                        <span className="text-6xl">🤖</span>
-                      </div>
-                    </div>
-                    <div className="space-y-4">
-                      <h4 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">AI am I オフライン会</h4>
-                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">AI活用を学び合い、「第二の自分」を育てる仲間が集まるコミュニティ。実践的なAI活用法から哲学的な話題まで幅広く議論しています。</p>
-                    </div>
-                    <div className="bg-blue-50 rounded-xl p-4">
-                      <h5 className="font-semibold text-gray-900 mb-2">活動内容</h5>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• 「第二の自分」育成ワークショップ</li>
-                        <li>• 最新AIツール体験・レビュー</li>
-                        <li>• AI活用事例シェア・ディスカッション</li>
-                      </ul>
-                    </div>
-                    <div className="text-center">
-                      <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold group-hover:bg-blue-600 transition-colors duration-300">
-                        次回開催準備中
-                      </span>
-                    </div>
+              {/* 生成AI活用シェア会 */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-300">
+                    <span className="text-2xl">🤖</span>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">生成AI活用シェア会</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">仕事・遊び・生活での実践的なAI活用事例をシェアし合う情報交換会。</p>
+                  </div>
+                  <div className="text-center">
+                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-blue-600 transition-colors duration-300">
+                      定期開催中
+                    </span>
                   </div>
                 </div>
-                
-                <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green-400 hover:shadow-2xl hover:shadow-green-200/30 transition-all duration-500 hover:-translate-y-2">
-                  <div className="space-y-6">
-                    <div className="w-full h-48 bg-green-100 rounded-2xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                      <div className="w-full h-full bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center">
-                        <span className="text-6xl">🌟</span>
-                      </div>
-                    </div>
-                    <div className="space-y-4">
-                      <h4 className="text-xl font-semibold text-gray-900 group-hover:text-green-600 transition-colors duration-300">みんなの生成AI活用発表会</h4>
-                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">仕事・遊び・生活での実践的なAI活用事例をシェアし合う情報交換会。初心者歓迎、聞くだけ参加もOKのカジュアルな学びの場。</p>
-                    </div>
-                    <div className="bg-green-50 rounded-xl p-4">
-                      <h5 className="font-semibold text-gray-900 mb-2">活動内容</h5>
-                      <ul className="text-sm text-gray-600 space-y-1">
-                        <li>• AI活用事例発表・シェア</li>
-                        <li>• 最新AIツール情報交換</li>
-                        <li>• 初心者向けワークショップ</li>
-                      </ul>
-                    </div>
-                    <div className="text-center">
-                      <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold group-hover:bg-green-600 transition-colors duration-300">
-                        定期開催中
-                      </span>
-                    </div>
+              </div>
+              
+              {/* 福沼会 */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-xl hover:shadow-green-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors duration-300">
+                    <span className="text-2xl">🌟</span>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors duration-300">福沼会</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">福岡でAI活用を学び合い、「第二の自分」を育てる仲間が集まるコミュニティ。</p>
+                  </div>
+                  <div className="text-center">
+                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-green-600 transition-colors duration-300">
+                      次回開催準備中
+                    </span>
                   </div>
                 </div>
               </div>
@@ -150,7 +95,7 @@ export default function CommunityPage() {
         <div className="container-custom">
           <div className="space-y-20">
             <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">コミュニティ作りの哲学</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">コミュニティ作りで大事にしたいこと</h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             
@@ -204,59 +149,74 @@ export default function CommunityPage() {
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
             </div>
             
-            <div className="grid-3col gap-8">
-              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-200/30 transition-all duration-500 hover:-translate-y-2">
-                <div className="space-y-6">
-                  <div className="w-full h-48 bg-orange-100 rounded-2xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                    <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-400 flex items-center justify-center">
-                      <span className="text-6xl">📝</span>
-                    </div>
+            <div className="grid-4col gap-6">
+              {/* ピクニックサークル */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-orange-400 hover:shadow-xl hover:shadow-orange-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center group-hover:bg-orange-200 transition-colors duration-300">
+                    <span className="text-2xl">🧺</span>
                   </div>
-                  <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-gray-900 group-hover:text-orange-600 transition-colors duration-300">福岡ブロガー会</h4>
-                    <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">福岡でブログを書く人たちが集まり、情報交換や相互支援を行うコミュニティでした。月1回の定期会合で多くのブロガーとの出会いがありました。</p>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-orange-600 transition-colors duration-300">ピクニックサークル</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">大学出て１、２年間。自然の中で楽しむ仲間たちとピクニックを企画・開催していました。</p>
                   </div>
                   <div className="text-center">
-                    <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold group-hover:bg-orange-600 transition-colors duration-300">
-                      2018-2020年活動
+                    <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-orange-600 transition-colors duration-300">
+                      大学卒業後1-2年
                     </span>
                   </div>
                 </div>
               </div>
               
-              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green-400 hover:shadow-2xl hover:shadow-green-200/30 transition-all duration-500 hover:-translate-y-2">
-                <div className="space-y-6">
-                  <div className="w-full h-48 bg-green-100 rounded-2xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                    <div className="w-full h-full bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center">
-                      <span className="text-6xl">🌍</span>
-                    </div>
+              {/* シェアハウスのらまめ */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-green-400 hover:shadow-xl hover:shadow-green-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors duration-300">
+                    <span className="text-2xl">🏠</span>
                   </div>
-                  <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-gray-900 group-hover:text-green-600 transition-colors duration-300">国際交流イベント</h4>
-                    <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">福岡に住む外国人と日本人の交流を促進するイベントを定期開催。言語交換から文化体験まで様々な企画を実施しました。</p>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors duration-300">シェアハウスのらまめ</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">友人4人と共同生活。シェアハウスでの暮らしを通じて、新しい生活スタイルを体験しました。</p>
                   </div>
                   <div className="text-center">
-                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold group-hover:bg-green-600 transition-colors duration-300">
-                      2017-2019年活動
+                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-green-600 transition-colors duration-300">
+                      友人4人と共同生活
                     </span>
                   </div>
                 </div>
               </div>
               
-              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-purple-400 hover:shadow-2xl hover:shadow-purple-200/30 transition-all duration-500 hover:-translate-y-2">
-                <div className="space-y-6">
-                  <div className="w-full h-48 bg-purple-100 rounded-2xl overflow-hidden group-hover:shadow-lg transition-all duration-500">
-                    <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                      <span className="text-6xl">🏠</span>
-                    </div>
+              {/* シェアハウス&ホームステイ */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-400 hover:shadow-xl hover:shadow-purple-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+                    <span className="text-2xl">🌍</span>
                   </div>
-                  <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">ゲストハウス研究会</h4>
-                    <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">ゲストハウス経営に興味がある人たちと情報交換・視察ツアーを企画。実際に開業した人も出てきて嬉しい思い出です。</p>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">シェアハウス&ホームステイ</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">僕ら夫婦＋友人１人＋外国人留学生。国際的な環境での共同生活を体験しました。</p>
                   </div>
                   <div className="text-center">
-                    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold group-hover:bg-purple-600 transition-colors duration-300">
-                      2019-2020年活動
+                    <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-purple-600 transition-colors duration-300">
+                      夫婦＋友人＋留学生
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* 留学・国際交流サークルUniPass */}
+              <div className="group cursor-pointer bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-200/30 transition-all duration-500 hover:-translate-y-1">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-300">
+                    <span className="text-2xl">✈️</span>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">留学・国際交流サークルUniPass</h4>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">大学3年ー4年生。留学や国際交流に興味のある学生たちと活動していました。</p>
+                  </div>
+                  <div className="text-center">
+                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold group-hover:bg-blue-600 transition-colors duration-300">
+                      大学3年ー4年生
                     </span>
                   </div>
                 </div>
@@ -271,15 +231,14 @@ export default function CommunityPage() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display text-white">LET'S CONNECT</h2>
+              <h2 className="text-display text-white">これも何かのご縁！</h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto text-white">
-                一緒に楽しみませんか？<br />
-                新しいコミュニティへの参加や、一緒に何か始めたいアイデアがあれば<br />
-                お気軽にお声がけください！
+                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
+                なんでもお気軽に☺️
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

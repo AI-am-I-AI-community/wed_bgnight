@@ -5,29 +5,18 @@ import Link from 'next/link'
 export default function Career() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - 統一感のあるデザイン */}
-      <section className="min-h-screen relative bg-cover bg-center bg-no-repeat" style={{
+      {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
+      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751644296/AI-Powered_Journey_Image_k7nfzy.png')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-16">
+          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
             {/* Main Title */}
             <div className="space-y-12 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
-                <span className="block">Masayaの経歴</span>
-                <span className="hidden md:block mt-6">"聴くこと""教えること"を生業として</span>
-                <span className="block md:hidden mt-4">"聴くこと""教えること"</span>
-                <span className="block md:hidden mt-2 ml-8">を生業として</span>
+                <span className="block">経歴</span>
               </h1>
               <div className="w-32 h-1 bg-black mx-auto drop-shadow-sm"></div>
-            </div>
-            
-            {/* Subtext */}
-            <div className="max-w-2xl animate-fade-in">
-              <p className="text-2xl md:text-3xl text-balance leading-relaxed text-black drop-shadow-md">
-                日本語教師、企業のIT担当、プロのコーチなど<br />
-                社員・個人いろんなスタイルで"聴くこと""教えること"を生業としてきました。
-              </p>
             </div>
           </div>
         </div>
@@ -297,15 +286,14 @@ export default function Career() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display text-white">LET'S CONNECT</h2>
+              <h2 className="text-display text-white">これも何かのご縁！</h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto text-white">
-                一緒に何か始めませんか？<br />
-                AI活用、コミュニティ作り、学習サポートなど<br />
-                様々な形でお手伝いできることがあるかもしれません
+                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
+                なんでもお気軽に☺️
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

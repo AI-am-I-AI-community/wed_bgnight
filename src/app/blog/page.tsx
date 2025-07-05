@@ -1,5 +1,3 @@
-"use client"
-
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/posts'
 
@@ -8,28 +6,18 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section - 統一感のあるデザイン */}
-      <section className="min-h-screen relative bg-cover bg-center bg-no-repeat" style={{
+      {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
+      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751644296/AI-Powered_Journey_Image_k7nfzy.png')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-16">
+          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
             {/* Main Title */}
-            <div className="space-y-12 animate-fade-in">
-              <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
-                <span className="block">ブログ記事</span>
-                <span className="hidden md:block mt-6">様々なテーマで発信</span>
-                <span className="block md:hidden mt-4">様々なテーマで</span>
-                <span className="block md:hidden mt-2 ml-8">発信</span>
+            <div className="space-y-8 animate-fade-in">
+              <h1 className="text-3xl md:text-5xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
+                <span className="block">BLOG</span>
               </h1>
-              <div className="w-32 h-1 bg-black mx-auto drop-shadow-sm"></div>
-            </div>
-            
-            {/* Subtext */}
-            <div className="max-w-2xl animate-fade-in">
-              <p className="text-2xl md:text-3xl text-balance leading-relaxed text-black drop-shadow-md">
-                ライフハック、国際交流、カメラ、技術など、様々なテーマで書いた記事を公開しています。
-              </p>
+              <div className="w-24 h-1 bg-black mx-auto drop-shadow-sm"></div>
             </div>
           </div>
         </div>

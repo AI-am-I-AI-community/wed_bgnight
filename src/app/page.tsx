@@ -149,7 +149,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-white tracking-wide group-hover:text-green-300 transition-colors duration-300">聴く・教えるがスキ</h3>
                 </div>
                 <p className="text-gray-400 leading-relaxed mb-6 group-hover:text-gray-300 transition-colors duration-300">
-                  日本語教師、企業のIT担当、プロのコーチなど社員・個人で"聴くこと""教えること"を生業としてきました。
+                  日本語教師・企業のIT担当・コーチング提供など、社員・個人で"聴くこと""教えること"を生業としてきました。
                 </p>
                 <Link href="/career" className="inline-block bg-green-400/20 hover:bg-green-400 text-green-400 hover:text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-green-400/30 hover:border-green-400 hover:shadow-lg hover:shadow-green-400/25 text-sm backdrop-blur-sm">
                   Masayaの経歴
@@ -300,14 +300,14 @@ export default function Home() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display">LET'S CONNECT</h2>
+              <h2 className="text-display">これも何かのご縁！</h2>
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
             </div>
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto">
-                プロジェクトのご相談、AI活用についてのお話、<br />
-                お気軽にお声がけください。
+                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
+                なんでもお気軽に☺️
               </p>
               
               <a 
@@ -316,7 +316,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                Contact on X
+                XでDMする
               </a>
             </div>
           </div>

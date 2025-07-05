@@ -118,24 +118,14 @@ export default function RootLayout({
                 </div>
                 
                 {/* 右: ナビゲーションリンク */}
-                <div className="grid-2col gap-12">
+                <div className="flex justify-end">
                   <div className="space-y-6">
                     <h4 className="text-sm tracking-wider text-gray-500 uppercase">Navigation</h4>
                     <ul className="space-y-4">
                       <li><Link href="/" className="text-white hover:text-gray-300 transition-colors duration-300">Home</Link></li>
                       <li><Link href="/about" className="text-white hover:text-gray-300 transition-colors duration-300">About</Link></li>
                       <li><Link href="/blog" className="text-white hover:text-gray-300 transition-colors duration-300">Blog</Link></li>
-                      <li><Link href="/#works" className="text-white hover:text-gray-300 transition-colors duration-300">WORKS</Link></li>
-                    </ul>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <h4 className="text-sm tracking-wider text-gray-500 uppercase">Projects</h4>
-                    <ul className="space-y-4">
-                      <li><Link href="/projects/second-self" className="text-white hover:text-gray-300 transition-colors duration-300">第二の自分</Link></li>
-                      <li><Link href="/events/boardgame" className="text-white hover:text-gray-300 transition-colors duration-300">ボードゲーム制作会</Link></li>
-                      <li><Link href="/events/ai-study" className="text-white hover:text-gray-300 transition-colors duration-300">AI勉強会</Link></li>
-                      <li><Link href="/services/freelance" className="text-white hover:text-gray-300 transition-colors duration-300">フリーランス支援</Link></li>
+                      <li><Link href="/#works" className="text-white hover:text-gray-300 transition-colors duration-300">Works</Link></li>
                     </ul>
                   </div>
                 </div>
