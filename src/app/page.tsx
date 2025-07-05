@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="section">
+      <section id="works" className="section">
         <div className="container-custom">
           <div className="space-y-20">
             <div className="text-center space-y-8">

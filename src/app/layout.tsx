@@ -62,7 +62,26 @@ export default function RootLayout({
                   About
                 </button>
                 <Link href="/blog" className="nav-link">Blog</Link>
-                <Link href="/portfolio" className="nav-link">Work</Link>
+                <button 
+                  onClick={() => {
+                    if (window.location.pathname === '/') {
+                      const element = document.getElementById('works')
+                      if (element) {
+                        const navHeight = 80
+                        const elementPosition = element.offsetTop - navHeight - 20
+                        window.scrollTo({
+                          top: elementPosition,
+                          behavior: 'smooth'
+                        })
+                      }
+                    } else {
+                      window.location.href = '/#works'
+                    }
+                  }}
+                  className="nav-link"
+                >
+                  WORKS
+                </button>
                 <a 
                   href="https://x.com/MasayaToAi" 
                   target="_blank" 
@@ -128,7 +147,28 @@ export default function RootLayout({
                       <li><Link href="/" className="text-white hover:text-gray-300 transition-colors duration-300">Home</Link></li>
                       <li><Link href="/about" className="text-white hover:text-gray-300 transition-colors duration-300">About</Link></li>
                       <li><Link href="/blog" className="text-white hover:text-gray-300 transition-colors duration-300">Blog</Link></li>
-                      <li><Link href="/portfolio" className="text-white hover:text-gray-300 transition-colors duration-300">Work</Link></li>
+                      <li>
+                        <button 
+                          onClick={() => {
+                            if (window.location.pathname === '/') {
+                              const element = document.getElementById('works')
+                              if (element) {
+                                const navHeight = 80
+                                const elementPosition = element.offsetTop - navHeight - 20
+                                window.scrollTo({
+                                  top: elementPosition,
+                                  behavior: 'smooth'
+                                })
+                              }
+                            } else {
+                              window.location.href = '/#works'
+                            }
+                          }}
+                          className="text-white hover:text-gray-300 transition-colors duration-300"
+                        >
+                          WORKS
+                        </button>
+                      </li>
                     </ul>
                   </div>
                   
