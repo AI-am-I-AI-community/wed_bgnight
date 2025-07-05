@@ -3,13 +3,75 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
-import Head from 'next/head'
+import { Metadata } from 'next'
+import Navigation from './components/Navigation'
+import StructuredData from './components/StructuredData'
+import GoogleAnalytics from './components/GoogleAnalytics'
 
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 })
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Masaya - AI活用サポーター・クリエイター',
+    template: '%s | Masaya'
+  },
+  description: '福岡在住のAI活用サポーター・クリエイター。ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。',
+  keywords: ['AI活用', 'ChatGPT', '第二の自分', '3Dモデリング', '福岡', 'フリーランス', 'ADHD', 'ボードゲーム制作', '国際交流'],
+  authors: [{ name: 'Masaya', url: 'https://masayamuko.com' }],
+  creator: 'Masaya',
+  publisher: 'Masaya',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://masayamuko.com'),
+  alternates: {
+    canonical: 'https://masayamuko.com',
+  },
+  openGraph: {
+    title: 'Masaya - AI活用サポーター・クリエイター',
+    description: 'ChatGPTを「第二の自分」として育てる独自手法を開発。福岡でAI活用支援とクリエイティブ活動を展開。',
+    url: 'https://masayamuko.com',
+    siteName: 'Masaya',
+    locale: 'ja_JP',
+    type: 'website',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dg3mdcuju/image/upload/v1751444000/masayatoai.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Masaya - AI活用サポーター・クリエイター',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Masaya - AI活用サポーター・クリエイター',
+    description: 'ChatGPTを「第二の自分」として育てる独自手法を開発。福岡でAI活用支援とクリエイティブ活動を展開。',
+    creator: '@MasayaToAi',
+    images: ['https://res.cloudinary.com/dg3mdcuju/image/upload/v1751444000/masayatoai.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Google Search Console verification (後で設定)
+    // google: 'your-google-verification-code',
+  },
+}
 
 export default function RootLayout({
   children,
@@ -18,92 +80,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={inter.variable}>
-      <Head>
-        <title>Masaya - AI活用サポーター・クリエイター</title>
-        <meta name="description" content="福岡在住のAI活用サポーター・クリエイター。ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。" />
-        <meta name="keywords" content="AI活用, ChatGPT, 第二の自分, 3Dモデリング, 福岡, フリーランス, ADHD, ボードゲーム制作, 国際交流" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Masaya - AI活用サポーター・クリエイター" />
-        <meta property="og:description" content="ChatGPTを「第二の自分」として育てる独自手法を開発。福岡でAI活用支援とクリエイティブ活動を展開。" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="ja_JP" />
-      </Head>
       <body className={`${inter.className} antialiased`}>
-        {/* ミニマルナビゲーション */}
-        <nav className="fixed top-0 w-full bg-white border-b border-gray-200 z-50">
-          <div className="container-wide">
-            <div className="flex items-center justify-between h-20">
-              {/* ロゴ - ミニマル */}
-              <Link href="/" className="group">
-                <span className="text-2xl font-bold tracking-tight text-black hover:opacity-70 transition-opacity duration-300">MASAYA</span>
-              </Link>
-              
-              {/* デスクトップナビゲーション */}
-              <div className="hidden md:flex items-center space-x-12">
-                <Link href="/" className="nav-link">Home</Link>
-                <button 
-                  onClick={() => {
-                    if (window.location.pathname === '/') {
-                      const element = document.getElementById('masaya-characteristics')
-                      if (element) {
-                        const navHeight = 80
-                        const elementPosition = element.offsetTop - navHeight - 20
-                        window.scrollTo({
-                          top: elementPosition,
-                          behavior: 'smooth'
-                        })
-                      }
-                    } else {
-                      window.location.href = '/#masaya-characteristics'
-                    }
-                  }}
-                  className="nav-link"
-                >
-                  About
-                </button>
-                <Link href="/blog" className="nav-link">Blog</Link>
-                <button 
-                  onClick={() => {
-                    if (window.location.pathname === '/') {
-                      const element = document.getElementById('works')
-                      if (element) {
-                        const navHeight = 80
-                        const elementPosition = element.offsetTop - navHeight - 20
-                        window.scrollTo({
-                          top: elementPosition,
-                          behavior: 'smooth'
-                        })
-                      }
-                    } else {
-                      window.location.href = '/#works'
-                    }
-                  }}
-                  className="nav-link"
-                >
-                  WORKS
-                </button>
-                <a 
-                  href="https://x.com/MasayaToAi" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="nav-link"
-                >
-                  Contact
-                </a>
-              </div>
-              
-              {/* モバイルメニューボタン */}
-              <div className="md:hidden">
-                <button className="text-black hover:opacity-70 transition-opacity duration-300">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-
+        <StructuredData />
+        <GoogleAnalytics />
+        <Navigation />
+        
         {/* メインコンテンツ */}
         <main className="pt-20">
           {children}
@@ -147,28 +128,7 @@ export default function RootLayout({
                       <li><Link href="/" className="text-white hover:text-gray-300 transition-colors duration-300">Home</Link></li>
                       <li><Link href="/about" className="text-white hover:text-gray-300 transition-colors duration-300">About</Link></li>
                       <li><Link href="/blog" className="text-white hover:text-gray-300 transition-colors duration-300">Blog</Link></li>
-                      <li>
-                        <button 
-                          onClick={() => {
-                            if (window.location.pathname === '/') {
-                              const element = document.getElementById('works')
-                              if (element) {
-                                const navHeight = 80
-                                const elementPosition = element.offsetTop - navHeight - 20
-                                window.scrollTo({
-                                  top: elementPosition,
-                                  behavior: 'smooth'
-                                })
-                              }
-                            } else {
-                              window.location.href = '/#works'
-                            }
-                          }}
-                          className="text-white hover:text-gray-300 transition-colors duration-300"
-                        >
-                          WORKS
-                        </button>
-                      </li>
+                      <li><Link href="/#works" className="text-white hover:text-gray-300 transition-colors duration-300">WORKS</Link></li>
                     </ul>
                   </div>
                   

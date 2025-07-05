@@ -1,4 +1,19 @@
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog - 第二の自分育成ガイド',
+  description: 'ChatGPTを活用した「第二の自分」の育成方法を詳しく解説。AI活用のテクニックから実践的な事例まで、豊富なコンテンツでサポートします。',
+  openGraph: {
+    title: 'Blog - 第二の自分育成ガイド | Masaya',
+    description: 'ChatGPTを活用した「第二の自分」の育成方法を詳しく解説。AI活用のテクニックから実践的な事例まで、豊富なコンテンツでサポートします。',
+    url: 'https://masayamuko.com/blog',
+  },
+  twitter: {
+    title: 'Blog - 第二の自分育成ガイド | Masaya',
+    description: 'ChatGPTを活用した「第二の自分」の育成方法を詳しく解説。AI活用のテクニックから実践的な事例まで、豊富なコンテンツでサポートします。',
+  },
+}
 
 // 仮のブログ記事データ（後でSanityから取得）
 const blogPosts = [
