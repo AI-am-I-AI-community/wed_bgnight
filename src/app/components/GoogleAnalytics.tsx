@@ -1,21 +1,42 @@
 "use client"
 
-import { useEffect } from 'react'
 import Script from 'next/script'
+import { usePathname, useSearchParams } from 'next/navigation'
+import { useEffect } from 'react'
 
-// 環境変数からGoogle Analytics IDを取得
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
+// Google Analytics イベント送信用のヘルパー関数
+export const gtag = (event: string, action: string, params: any) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag(event, action, params)
+  }
+}
+
+// 型定義
+declare global {
+  interface Window {
+    gtag: (event: string, action: string, params: any) => void
+  }
+}
+
 export default function GoogleAnalytics() {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
   useEffect(() => {
-    if (GA_MEASUREMENT_ID && typeof window !== 'undefined') {
-      // ページビューを送信
-      window.gtag('config', GA_MEASUREMENT_ID, {
-        page_title: document.title,
-        page_location: window.location.href,
+    if (!GA_MEASUREMENT_ID || process.env.NODE_ENV !== 'production') {
+      return
+    }
+    const url = pathname + searchParams.toString()
+    
+    if (typeof window.gtag === 'function') {
+      gtag('config', GA_MEASUREMENT_ID, {
+        page_path: url,
       })
     }
-  }, [])
+  }, [pathname, searchParams])
+
 
   // 本番環境でのみGoogle Analyticsを読み込む
   if (process.env.NODE_ENV !== 'production' || !GA_MEASUREMENT_ID) {
@@ -37,8 +58,7 @@ export default function GoogleAnalytics() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_title: document.title,
-              page_location: window.location.href,
+              page_path: window.location.pathname,
             });
           `,
         }}
@@ -46,17 +66,3 @@ export default function GoogleAnalytics() {
     </>
   )
 }
-
-// Google Analytics イベント送信用のヘルパー関数
-export const gtag = (...args: any[]) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag(...args)
-  }
-}
-
-// 型定義
-declare global {
-  interface Window {
-    gtag: (...args: any[]) => void
-  }
-} 

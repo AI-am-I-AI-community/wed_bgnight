@@ -1,46 +1,61 @@
 import { MetadataRoute } from 'next'
+import { getAllPosts } from '@/lib/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://masayamuko.com'
   const currentDate = new Date()
+  const posts = getAllPosts()
+  
+  const postUrls = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.publishedAt,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
 
   return [
     {
       url: baseUrl,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
+      changeFrequency: 'daily' as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
     },
     {
       url: `${baseUrl}/blog`,
       lastModified: currentDate,
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/career`,
+      url: `${baseUrl}/portfolio`,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
     },
     {
-      url: `${baseUrl}/tools`,
+      url: `${baseUrl}/services`,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
     },
     // Projects
     {
-      url: `${baseUrl}/projects/second-self`,
+      url: `${baseUrl}/projects`,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
     },
     // Events
     {
@@ -87,5 +102,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.6,
     },
+    ...postUrls,
   ]
 } 
