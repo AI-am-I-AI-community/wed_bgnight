@@ -51,81 +51,7 @@ export default function BoardgamePage() {
               </div>
             </div>
 
-            {/* こんな人に来てほしい */}
-            <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-center">こんな人に来てほしい</h2>
-              <div className="grid-2col gap-8">
-                <div className="bg-yellow-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">💡</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">作りたい意欲</h3>
-                  <p className="text-gray-700">作りたいボードゲームがある or 無いけど関わりたい◎</p>
-                </div>
-                
-                <div className="bg-green-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🎮</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">ボドゲへの愛</h3>
-                  <p className="text-gray-700">ボードゲーム大好き。ボドゲ知識や経験でみんなの力になりたい</p>
-                </div>
-                
-                <div className="bg-purple-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🤝</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">経験不問</h3>
-                  <p className="text-gray-700">ボドゲ経験不問（初心者〜上級者OK）</p>
-                </div>
-                
-                <div className="bg-blue-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🤖</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">AI活用への興味</h3>
-                  <p className="text-gray-700">AIの活用方法知りたい。活用例を見たい</p>
-                </div>
-              </div>
-            </div>
 
-            {/* 互いにこんなことしていきたい */}
-            <div className="space-y-8">
-              <h2 className="text-3xl font-bold text-center">互いにこんなことしていきたい</h2>
-              <div className="grid-2col gap-8">
-                <div className="bg-pink-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🎲</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">ボードゲームで仲良くなる</h3>
-                  <p className="text-gray-700">ボードゲーム遊んで仲良く！インスピレーションもGET！</p>
-                </div>
-                
-                <div className="bg-indigo-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">💭</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">アイデアのブレスト</h3>
-                  <p className="text-gray-700">誰かの「作りたい」にみんなでブレスト</p>
-                </div>
-                
-                <div className="bg-teal-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🤖</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">AI活用方法のシェア</h3>
-                  <p className="text-gray-700">AIの活用方法や活用例をみんなでシェア</p>
-                </div>
-                
-                <div className="bg-orange-50 rounded-2xl p-6 space-y-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🎮</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">テストプレイ</h3>
-                  <p className="text-gray-700">作ったゲームをみんなでテストプレイ</p>
-                </div>
-              </div>
-            </div>
 
             {/* コミュニティの魅力 */}
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12">
@@ -181,25 +107,7 @@ export default function BoardgamePage() {
               </a>
             </div>
 
-            {/* 主催者からのメッセージ */}
-            <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
-              <div className="space-y-8">
-                <div className="text-center">
-                  <h2 className="text-3xl font-bold text-gray-900">主催者からのメッセージ</h2>
-                  <p className="text-lg text-gray-600 mt-2">盤上テトの中の人です！</p>
-                </div>
-                
-                <div className="max-w-3xl mx-auto space-y-6">
-                  <p className="text-gray-700 leading-relaxed">
-                    ボードゲーム初心者カジュアル好き。AI大好きで毎日使いまくってる。作りたいアイデアはたくさんだけど知識と経験が少なすぎてなかなか形にしきれない。。。
-                  </p>
-                  
-                  <p className="text-gray-700 leading-relaxed">
-                    AI活用は必要とあらばいくらでもシェアします！素敵な仲間と一緒に遊びながら作りたい！！イベント・コミュニティー大好きでこれまでもいろいろやってきました。みんなにとって良き場にしたいです。
-                  </p>
-                </div>
-              </div>
-            </div>
+
 
             {/* よくある質問 */}
             <div className="space-y-8">
