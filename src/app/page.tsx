@@ -244,7 +244,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-4">
                       <h4 className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">AIでボドゲつくらNight</h4>
-                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">隔週水曜日開催のボードゲーム制作イベント。AIを活用してアイデア出しから実際の制作まで、参加者同士で楽しみながらオリジナルボードゲームを作っています。</p>
+                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">AIを活用してオリジナルボードゲームを制作するクリエイティブなイベント。アイデア出しから実際の制作まで、参加者同士で楽しみながら新しいゲームを生み出しています。</p>
                     </div>
                     <Link href="/events/boardgame" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-300/50 group-hover:scale-105">
                       詳細を見る
@@ -263,7 +263,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-4">
                       <h4 className="text-xl font-semibold text-gray-900 group-hover:text-green-600 transition-colors duration-300">みんなの生成AI活用発表会</h4>
-                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">月1回開催のAI活用情報交換会。仕事・遊び・生活での実践的な活用事例をシェアし合います。初心者歓迎、聞くだけ参加もOKのカジュアルな学びの場です。</p>
+                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">仕事・遊び・生活での実践的なAI活用事例をシェアし合う情報交換会。初心者歓迎、聞くだけ参加もOKのカジュアルな学びの場で、新しい発見がたくさん！</p>
                     </div>
                     <Link href="/events/ai-study" className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-300/50 group-hover:scale-105">
                       詳細を見る
@@ -282,7 +282,7 @@ export default function Home() {
                     </div>
                     <div className="space-y-4">
                       <h4 className="text-xl font-semibold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">社会的養護のユース支援</h4>
-                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">NPO団体での月1回ボードゲーム会と社会的養護施設での週1回勤務を通じた若者支援。将来的には支援に繋がるボードゲームカフェの開業も目指しています。</p>
+                      <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">社会的養護のもとで育った若者たちの自立と成長をサポートする活動。ボードゲームを通じた交流や施設での直接支援、そして将来のボードゲームカフェ開業という夢も。</p>
                     </div>
                     <Link href="/services/youth-support" className="inline-block bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-purple-300/50 group-hover:scale-105">
                       詳細を見る
