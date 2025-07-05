@@ -7,6 +7,15 @@ Disallow: /_next/
 Disallow: /api/
 Disallow: /sanity/
 
+# Disallow old/deleted content patterns
+Disallow: /posts/
+Disallow: /article/
+Disallow: /category/
+Disallow: /tag/
+Disallow: /*/20*/  # Old date-based URLs
+Disallow: /blog/old-*
+Disallow: /archive/
+
 # Allow important pages
 Allow: /blog/
 Allow: /about/
