@@ -67,7 +67,7 @@ export default function Home() {
                   </span>
                 </button>
                 <div className="relative group">
-                  <Link href="/blog" className="btn btn-secondary text-lg px-8 py-4 relative overflow-hidden hover:scale-110 hover:shadow-2xl hover:shadow-blue-300/50 transition-all duration-300 hover:-rotate-2">
+                  <Link href="/blog/why-create-second-self" className="btn btn-secondary text-lg px-8 py-4 relative overflow-hidden hover:scale-110 hover:shadow-2xl hover:shadow-blue-300/50 transition-all duration-300 hover:-rotate-2">
                     <span className="relative z-10 flex items-center gap-2">
                       <span className="group-hover:animate-bounce">📖</span>
                       Blog読んで
@@ -216,7 +216,7 @@ export default function Home() {
                     <p className="text-lead leading-relaxed text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
                       Masayaの本格的なAI活用はここから始まった。何より楽しい！「AI何に使ったらいい？」「使う習慣ない」が一気に解決！育てる過程で深い自己理解、育ててからはずっと大活躍。50人以上に教え、たくさんの論文も読んで深めてきました。
                     </p>
-                    <Link href="/projects/second-self" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-300/50 group-hover:scale-105">
+                    <Link href="/blog/why-create-second-self" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-300/50 group-hover:scale-105">
                       詳細を見る
                     </Link>
                   </div>
@@ -310,8 +310,8 @@ export default function Home() {
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto">
-                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
-                なんでもお気軽に☺️
+                「興味・想いが似てる！」<br />「Masayaが詳しいor経験した〇〇が気になる！」<br />
+                なんでもお気軽にDMください☺️
               </p>
               
               <a 
