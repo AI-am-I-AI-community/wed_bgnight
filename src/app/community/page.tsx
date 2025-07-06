@@ -6,11 +6,11 @@ export default function CommunityPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
-      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
+      <section className="min-h-[25vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751450179/aibg01_lbdyxt.jpg')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
+          <div className="flex flex-col items-center justify-center min-h-[25vh] text-center space-y-12">
             {/* Main Title */}
             <div className="space-y-12 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
@@ -26,10 +26,7 @@ export default function CommunityPage() {
       <section className="section-alt">
         <div className="container-custom">
           <div className="space-y-20">
-            <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold">現在活動中のコミュニティー</h2>
-              <div className="w-16 h-0.5 bg-black mx-auto"></div>
-            </div>
+
             
             <div className="grid-3col gap-6">
               {/* ボドゲつくらNight */}
@@ -231,35 +228,38 @@ export default function CommunityPage() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display text-white">これも何かのご縁！</h2>
+              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent inline-block px-6 py-3 border-2 border-pink-400 rounded-full shadow-lg animate-pulse">
+                <span className="mr-3">✨</span>
+                これも何かのご縁！
+              </h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto text-white">
-                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
-                なんでもお気軽に☺️
+                「興味・想いが似てる！」<br />「Masayaが詳しいor経験した〇〇が気になる！」<br />
+                なんでもお気軽にDMください☺️
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Link href="/" className="group btn btn-primary text-lg px-8 py-4 relative overflow-hidden">
+                <a href="https://x.com/masayatoai" target="_blank" rel="noopener noreferrer" className="group btn btn-primary text-lg px-8 py-4 relative overflow-hidden">
                   <span className="flex items-center gap-3">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                     </svg>
-                    ホームに戻る
+                    XでDM
                     <svg className="w-5 h-5 transform group-hover:translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </span>
-                </Link>
-                <Link href="/about" className="group btn btn-secondary text-lg px-8 py-4 relative overflow-hidden hover:scale-110 hover:shadow-2xl hover:shadow-blue-300/50 transition-all duration-300 hover:-rotate-2">
+                </a>
+                <a href="/#works" className="group btn btn-secondary text-lg px-8 py-4 relative overflow-hidden hover:scale-110 hover:shadow-2xl hover:shadow-blue-300/50 transition-all duration-300 hover:-rotate-2">
                   <span className="relative z-10 flex items-center gap-2">
-                    <span className="group-hover:animate-bounce">👤</span>
-                    Masayaについて詳しく
+                    <span className="group-hover:animate-bounce">📅</span>
+                    イベントを見る
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

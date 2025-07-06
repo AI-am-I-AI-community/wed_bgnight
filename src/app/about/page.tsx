@@ -6,11 +6,11 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       {/* Hero Section - 自然と成長のテーマ */}
-      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
+      <section className="min-h-[25vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.1)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
+          <div className="flex flex-col items-center justify-center min-h-[25vh] text-center space-y-12">
             {/* Profile Image with nature theme */}
             <div className="animate-fade-in">
               <div className="relative">
@@ -25,23 +25,12 @@ export default function About() {
               </div>
             </div>
             
-            {/* Main Title with nature theme */}
+            {/* Main Title */}
             <div className="space-y-8 animate-fade-in">
               <h1 className="text-3xl md:text-5xl font-bold leading-relaxed text-balance text-green-900 drop-shadow-lg">
-                <span className="block">Masayaとは</span>
-                <span className="hidden md:block mt-4 text-green-700">"やさしく迎える"お手伝い。</span>
-                <span className="block md:hidden mt-2 text-green-700">"やさしく迎える"</span>
-                <span className="block md:hidden mt-1 ml-6 text-green-700">お手伝い。</span>
+                <span className="block">PROFILE</span>
               </h1>
               <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto drop-shadow-sm rounded-full"></div>
-            </div>
-            
-            {/* Subtext with nature theme */}
-            <div className="max-w-xl animate-fade-in">
-              <p className="text-lg md:text-xl text-balance leading-relaxed text-green-800 drop-shadow-md">
-                福岡在住のAI活用サポーター・クリエイター<br />
-                「やらぬ善よりやる偽善」を胸に、新しいことに挑戦し続ける35歳
-              </p>
             </div>
           </div>
         </div>
@@ -51,10 +40,7 @@ export default function About() {
       <section className="py-20 bg-gradient-to-br from-green-100 to-emerald-100">
         <div className="container-custom">
           <div className="space-y-20">
-            <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-green-900">大切にしている価値観</h2>
-              <div className="w-16 h-0.5 bg-gradient-to-r from-green-400 to-emerald-500 mx-auto rounded-full"></div>
-            </div>
+
             
             <div className="group cursor-pointer bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-8 md:p-12 hover:border-green-400 hover:shadow-2xl hover:shadow-green-200/50 transition-all duration-500 hover:-translate-y-2">
               <div className="grid-2col items-center gap-12">
@@ -222,14 +208,17 @@ export default function About() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display text-green-100">これも何かのご縁！</h2>
+              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent inline-block px-6 py-3 border-2 border-pink-400 rounded-full shadow-lg animate-pulse">
+                <span className="mr-3">✨</span>
+                これも何かのご縁！
+              </h2>
               <div className="w-16 h-0.5 bg-gradient-to-r from-green-400 to-emerald-400 mx-auto rounded-full"></div>
             </div>
             
             <div className="space-y-8">
               <p className="text-lead max-w-2xl mx-auto text-green-200">
-                Masayaと興味が似てる！Masayaが詳しいコレが気になる！<br />
-                なんでもお気軽に☺️
+                「興味・想いが似てる！」<br />「Masayaが詳しいor経験した〇〇が気になる！」<br />
+                なんでもお気軽にDMください☺️
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">

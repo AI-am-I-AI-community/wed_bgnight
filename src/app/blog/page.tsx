@@ -7,11 +7,11 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - 統一感のあるデザイン（高さ半分） */}
-      <section className="min-h-[50vh] relative bg-cover bg-center bg-no-repeat" style={{
+      <section className="min-h-[25vh] relative bg-cover bg-center bg-no-repeat" style={{
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://res.cloudinary.com/dg3mdcuju/image/upload/v1751644296/AI-Powered_Journey_Image_k7nfzy.png')"
       }}>
         <div className="container-narrow">
-          <div className="flex flex-col items-center justify-center min-h-[50vh] text-center space-y-12">
+          <div className="flex flex-col items-center justify-center min-h-[25vh] text-center space-y-12">
             {/* Main Title */}
             <div className="space-y-8 animate-fade-in">
               <h1 className="text-3xl md:text-5xl font-bold leading-relaxed text-balance text-black drop-shadow-lg">
@@ -27,10 +27,7 @@ export default function BlogPage() {
       <section className="section-alt">
         <div className="container-custom">
           <div className="space-y-20">
-            <div className="text-center space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold">記事一覧</h2>
-              <div className="w-16 h-0.5 bg-black mx-auto"></div>
-            </div>
+
             
             {/* 記事一覧 */}
             <div className="grid-3col gap-8">

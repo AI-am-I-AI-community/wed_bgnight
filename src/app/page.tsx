@@ -117,7 +117,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="space-y-20">
             <div className="text-center space-y-8">
-              <h2 id="masaya-characteristics" className="text-3xl md:text-4xl font-bold text-white">Masayaの特性</h2>
+              <h2 id="masaya-characteristics" className="text-3xl md:text-4xl font-bold text-white">Masayaはこんな人</h2>
               <div className="w-16 h-0.5 bg-white mx-auto"></div>
             </div>
             
@@ -135,7 +135,7 @@ export default function Home() {
                   最新AIツール情報を追い続け、積極的に課金して人柱になっています。常に自分 or誰かにぴったりのAI・ITツールを探求！
                 </p>
                 <Link href="/tools" className="inline-block bg-yellow-400/20 hover:bg-yellow-400 text-yellow-400 hover:text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-yellow-400/30 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-400/25 text-sm backdrop-blur-sm">
-                  活用中ツール&人柱ログ
+                  活用ツール & 人柱ログ
                 </Link>
               </div>
               
@@ -149,7 +149,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-white tracking-wide group-hover:text-green-300 transition-colors duration-300">聴く・教えるがスキ</h3>
                 </div>
                 <p className="text-gray-400 leading-relaxed mb-6 group-hover:text-gray-300 transition-colors duration-300">
-                  日本語教師・企業のIT担当・コーチング提供など、社員・個人で"聴くこと""教えること"を生業としてきました。
+                  日本語教師・企業のIT担当・コーチング提供など、社員・個人で「聴く」「教える」を生業としてきました。
                 </p>
                 <Link href="/career" className="inline-block bg-green-400/20 hover:bg-green-400 text-green-400 hover:text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-green-400/30 hover:border-green-400 hover:shadow-lg hover:shadow-green-400/25 text-sm backdrop-blur-sm">
                   Masayaの経歴
@@ -169,13 +169,13 @@ export default function Home() {
                   何かを好きになると人を集めコミュニティーを作る習性があります。人と人のハブ役。今はボドゲとAI活用の会してます。
                 </p>
                 <Link href="/community" className="inline-block bg-purple-400/20 hover:bg-purple-400 text-purple-400 hover:text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-purple-400/30 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-400/25 text-sm backdrop-blur-sm">
-                  Masayaとコミュニティー
+                  主催コミュニティー
                 </Link>
               </div>
             </div>
             
-            {/* 詳細なABOUTページへのリンク */}
-            <div className="text-right">
+            {/* 詳細なABOUTページへのリンク - ABOUTページ完成後に表示予定 */}
+            {/* <div className="text-right">
               <Link href="/about" className="group inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors duration-300">
                 <span className="leading-relaxed">
                   もっとMasayaを詳しく知りたい<br />
@@ -185,7 +185,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -197,6 +197,7 @@ export default function Home() {
             <div className="text-center space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold">活動内容</h2>
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
+              <p className="text-sm text-gray-500">現在稼働中のもののみ掲載</p>
             </div>
             
             <div className="space-y-12">
@@ -300,7 +301,10 @@ export default function Home() {
         <div className="container-narrow text-center">
           <div className="space-y-12">
             <div className="space-y-8">
-              <h2 className="text-display">これも何かのご縁！</h2>
+              <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent inline-block px-6 py-3 border-2 border-pink-400 rounded-full shadow-lg animate-pulse">
+                <span className="mr-3">✨</span>
+                これも何かのご縁！
+              </h2>
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
             </div>
             

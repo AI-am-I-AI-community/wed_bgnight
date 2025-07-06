@@ -35,7 +35,7 @@ export default function Navigation() {
             >
               About
             </button>
-            <Link href="/blog" className="nav-link">Blog</Link>
+            {/* <Link href="/blog" className="nav-link">Blog</Link> */}
             <button 
               onClick={() => {
                 if (window.location.pathname === '/') {
