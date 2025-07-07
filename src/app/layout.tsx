@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     default: "Masaya's website",
     template: '%s | Masaya'
   },
+  manifest: '/manifest.json',
   description: '福岡在住のAI活用サポーター・クリエイター。ChatGPTを「第二の自分」として育てる独自手法を開発。3Dモデリング、国際交流、ボードゲーム制作を通じて、人々の可能性を広げています。',
   keywords: ['AI活用', 'ChatGPT', '第二の自分', '3Dモデリング', '福岡', 'フリーランス', 'ADHD', 'ボードゲーム制作', '国際交流'],
   authors: [{ name: 'Masaya', url: 'https://masayamuko.com' }],
