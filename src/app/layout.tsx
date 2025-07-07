@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import Navigation from './components/Navigation'
 import StructuredData from './components/StructuredData'
 import GoogleAnalytics from './components/GoogleAnalytics'
+import AnalyticsDebug from './components/AnalyticsDebug'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -81,6 +82,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <StructuredData />
         <GoogleAnalytics />
+        <AnalyticsDebug />
         <Navigation />
         
         {/* メインコンテンツ */}
