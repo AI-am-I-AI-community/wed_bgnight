@@ -33,8 +33,9 @@ export default function GoogleAnalytics() {
     
     const url = pathname + searchParams.toString()
     
+    // ページビューの送信（configはScript内で既に実行済み）
     if (typeof window.gtag === 'function') {
-      gtag('config', GA_MEASUREMENT_ID, {
+      gtag('event', 'page_view', {
         page_path: url,
         page_title: document.title,
       })
