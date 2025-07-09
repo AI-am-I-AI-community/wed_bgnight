@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "82b45bb1ca7ec5d5",
+    "id": "e70ed014a0e0800e",
     "type": "split",
     "children": [
       {
-        "id": "f50bb0335eb286a1",
+        "id": "ce4c42fec07efa0d",
         "type": "tabs",
         "children": [
           {
-            "id": "8159096409d05f37",
+            "id": "2a7a6a49cdac2307",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02_team/AAI/03_content/blog_posts/04_【ステップアップ】デジタルMe育成プログラム_誰でもできる3ステップ.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "04_【ステップアップ】デジタルMe育成プログラム_誰でもできる3ステップ"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "31050ab3052a9463",
+    "id": "4fbb6e53c38a1a58",
     "type": "split",
     "children": [
       {
-        "id": "135917f0a690dba4",
+        "id": "c75cfbc704039daf",
         "type": "tabs",
         "children": [
           {
-            "id": "127dcef526feb09c",
+            "id": "9f6008eff60d691c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "98edb849f40ca1c2",
+            "id": "d19730cf9a9a57a2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "226bba697252dc76",
+            "id": "e3b24e37224c6d89",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,65 +73,56 @@
               "icon": "lucide-bookmark",
               "title": "ブックマーク"
             }
-          },
-          {
-            "id": "d440f224ae67fc03",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "49b68c2e499916d4",
+    "id": "c74cd45c9938f618",
     "type": "split",
     "children": [
       {
-        "id": "34c817ec9a16b654",
+        "id": "fba5de71de103615",
         "type": "tabs",
         "children": [
           {
-            "id": "9fc1337cedacbc84",
+            "id": "54d9ed6673e6df67",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/LLM による開発補助を Claude Projects + MCP に集約する.md",
+                "file": "Clippings/LLMエージェントで変わるレコメンドシステムの実践ガイド.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "LLM による開発補助を Claude Projects + MCP に集約するへのバックリンク"
+              "title": "LLMエージェントで変わるレコメンドシステムの実践ガイドへのバックリンク"
             }
           },
           {
-            "id": "c3b1ae38bd50aa38",
+            "id": "add7a3e0e77f4429",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Clippings/LLMエージェントで変わるレコメンドシステムの実践ガイド.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "アウトゴーイングリンク"
+              "title": "LLMエージェントで変わるレコメンドシステムの実践ガイドからのアウトゴーイングリンク"
             }
           },
           {
-            "id": "368a676b72584d96",
+            "id": "2fcaa383a95df33d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -142,92 +137,79 @@
             }
           },
           {
-            "id": "16f660fa4df02c1f",
+            "id": "32ee47fe898a6c85",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Clippings/LLMエージェントで変わるレコメンドシステムの実践ガイド.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "アウトライン"
-            }
-          },
-          {
-            "id": "acbb33e18d023366",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "title": "LLMエージェントで変わるレコメンドシステムの実践ガイドのアウトライン"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 330.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "cursor-bridge:Open in Cursor": false,
-      "publish:パブリッシュによる変更の公開": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false,
-      "workspaces:ワークスペースレイアウトを管理": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "copilot:Open Copilot Chat": false
+      "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8159096409d05f37",
+  "active": "2a7a6a49cdac2307",
   "lastOpenFiles": [
-    "02_team/AAI/03_content/blog_posts/00_【メリット】なぜ第二の自分を作るのか？_3ヶ月使い続けて分かった本当の価値.md",
-    "02_team/AAI/03_content/blog_posts/GeminiCLI_作業引き継ぎプロンプト.md",
-    "02_team/AAI/03_content/Gemini_mada/04_付録_プロンプトテンプレート集.md",
-    "02_team/AAI/03_content/Gemini_mada/03_STEP3_自分を深める_AIとの無意識探求.md",
-    "02_team/AAI/03_content/Gemini_mada/02_STEP2_自分を試す_AIとの対話チューニング.md",
-    "02_team/AAI/03_content/Gemini_mada/01_STEP1_自分を知る_AIへの自己紹介.md",
-    "02_team/AAI/03_content/Gemini_mada/00_はじめに_デジタルMe育成プログラムへようこそ.md",
-    "02_team/AAI/03_content/Gemini_mada",
-    "02_team/AAI/03_content/note投稿用/note記事仕上げチェックリスト.md",
-    "02_team/AAI/03_content/note投稿用/02_【ストーリー】ティキちゃん誕生物語_全8フェーズ完全ガイド.md",
-    "02_team/AAI/03_content/note投稿用/01_【はじめに】第二の自分って何？_5つのシリーズで分かる完全ガイド.md",
-    "02_team/AAI/03_content/note投稿用",
-    "02_team/AAI/03_content/blog_posts/note投稿用/02_【ストーリー】ティキちゃん誕生物語_全8フェーズ完全ガイド.md",
-    "02_team/AAI/03_content/blog_posts/note投稿用/note記事仕上げチェックリスト.md",
-    "02_team/AAI/03_content/blog_posts/note投稿用/01_【はじめに】第二の自分って何？_5つのシリーズで分かる完全ガイド.md",
-    "02_team/AAI/03_content/blog_posts/note投稿用",
-    "02_team/AAI/03_content/blog_posts/25_【予防医学】人生の健康診断システム_早期発見で問題解決.md",
-    "02_team/AAI/03_content/blog_posts/24_【価値】年利780%の最強投資_30分で人生が変わる話.md",
-    "02_team/AAI/03_content/blog_posts/23_【価値】やらないと年300時間損する_みんなが知らない機会コスト.md",
-    "02_team/AAI/03_content/blog_posts/22_【価値】24時間365日コーチで目標達成5倍速.md",
-    "02_team/AAI/03_content/blog_posts/21_【価値】あなた専属マネージャーで年収35%UP_芸能人の秘密を公開.md",
-    "02_team/AAI/03_content/blog_posts/20_【価値】人生ゲームを3.4倍早くクリアする最強の相棒.md",
-    "02_team/AAI/03_content/blog_posts/19_【価値】あなたの人生をプロデュース_創造力250%UPの秘密.md",
-    "02_team/AAI/03_content/blog_posts/18_【ADHD】音声で考える新習慣_特性を武器にする方法.md",
-    "02_team/AAI/03_content/blog_posts/17_【ADHD】集中力の波が最強の武器になる_AI活用の新常識.md",
-    "02_team/AAI/03_content/blog_posts/16_【ADHD】なぜこんなに相性がいいの？_第二の自分とADHDの秘密.md",
-    "02_team/AAI/03_content/blog_posts/15_【FAQ】よくある質問_第二の自分で困った時の解決法.md",
-    "02_team/AAI/03_content/blog_posts/14_【ティキちゃん】失敗談と復活劇_うまくいかない時の乗り越え方.md",
-    "02_team/AAI/03_content/blog_posts/13_【ティキちゃん】上手な話し方のコツ_85%再現した魔法の言葉.md",
-    "01_secondme/items/AI_tools/デジタルMe育成プログラム",
-    "01_secondme/items/AI_tools/ティキちゃん",
-    "01_secondme/04_school/technology_study/GeminiCLI",
-    "items/AI_tools/SuperWhisper",
-    "items/AI_tools/デジタルMe育成プログラム",
-    "items/AI_tools/ティキちゃん",
-    "items/AI_tools",
-    "02_team/AAI/01_website/assets/hero-image.svg",
-    "02_team/AI_am_I/01_website/assets/hero-image.svg",
-    "無題のファイル.canvas"
+    "00_inbox/docs/VERCEL_DEPLOYMENT.md",
+    "00_inbox/docs/SEO_SETUP.md",
+    "00_inbox/docs/SEO_RECOVERY_GUIDE.md",
+    "00_inbox/docs",
+    "00_inbox/【永久保存版】AIでDiscordサーバーを自動構 築する方法（コピペOK）",
+    "Public/WEB/Masaya_backup/src/app/services/youth-support/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/services/freelance/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/projects/second-self/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/events/ai-study/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/events/boardgame/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/blog/[id]/page.tsx",
+    "Public/WEB/Masaya_backup/src/app/blog/[slug]/page 2.tsx",
+    "Public/WEB/Masaya_backup/src/app/services/youth-support",
+    "Public/WEB/Masaya_backup/src/posts/zuca-prokurolux-travel.md",
+    "Public/WEB/Masaya_backup/src/posts/why-create-second-self.md",
+    "Public/WEB/Masaya_backup/src/posts/westernliquor.md",
+    "Public/WEB/Masaya_backup/src/posts/security.md",
+    "Public/WEB/Masaya_backup/src/posts/nihon-igai.md",
+    "Public/WEB/Masaya_backup/src/posts/meisou-zabuton.md",
+    "Public/WEB/Masaya_backup/src/posts/magnet_ubag.md",
+    "Public/WEB/Masaya_backup/src/posts/let-stay-travelers.md",
+    "Public/WEB/Masaya_backup/src/posts/languageexchange-fukuoka.md",
+    "Public/WEB/Masaya_backup/src/posts/kukou-omukae.md",
+    "Public/WEB/Masaya_backup/src/posts/kaigai-tomodachi-nimotsu.md",
+    "Public/WEB/Masaya_backup/src/posts/international-friends.md",
+    "Public/WEB/Masaya_backup/src/posts/hide_uberlogo.md",
+    "Public/WEB/Masaya_backup/src/posts/guesthouse-nihonjin.md",
+    "Public/WEB/Masaya_backup/src/posts/gr2-hokori.md",
+    "Public/WEB/Masaya_backup/src/posts/fukuoka-warabimochi.md",
+    "Public/WEB/Masaya_backup/src/posts/friends-eigo.md",
+    "Public/WEB/Masaya_backup/src/posts/esperanto-well-known.md",
+    "Public/WEB/Masaya_backup/src/posts/display-design.md",
+    "Public/WEB/Masaya_backup/src/posts/display-demelit.md",
+    "Public/WEB/Masaya_backup/src/posts/bookscan-tips.md",
+    "Public/WEB/Masaya_backup/src/posts/bookscan-premium-tips.md",
+    "Public/WEB/Masaya_backup/src/posts/asus-zenbeame1.md",
+    "Public/WEB/Masaya_backup/public/og-image.png",
+    "Public/og-image.png",
+    "Public/website/public/og-image.png",
+    "Public/WEB/Masaya/public/og-image.png",
+    "Public/Masaya/public/og-image.png"
   ]
 }

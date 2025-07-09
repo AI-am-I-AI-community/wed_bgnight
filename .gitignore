@@ -1,38 +1,30 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Obsidian全体リポジトリ用 .gitignore
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Publicフォルダ全体を除外（個別リポジトリで管理）
+Public/
 
-# testing
-/coverage
+# Obsidian関連ファイル
+.obsidian/
+*.obsidian
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# システムファイル
 .DS_Store
-*.pem
+Thumbs.db
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# 一時ファイル
+*.tmp
+*.temp
+*~
 
-# local env files
-.env*.local
+# ログファイル
+*.log
 
-# vercel
-.vercel
+# バックアップファイル
+*.bak
+*.backup
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# Public folder (separate repositories)
-Public/ 
+# その他の不要ファイル
+node_modules/
+.next/
+.env
+.env.local 
