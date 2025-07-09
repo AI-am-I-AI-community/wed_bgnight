@@ -198,6 +198,11 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold">活動内容</h2>
               <div className="w-16 h-0.5 bg-black mx-auto"></div>
               <p className="text-sm text-gray-500">現在稼働中のもののみ掲載</p>
+              <div className="flex justify-center">
+                <Link href="/events" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-300/50">
+                  直近のイベント一覧を見る
+                </Link>
+              </div>
             </div>
             
             <div className="space-y-12">

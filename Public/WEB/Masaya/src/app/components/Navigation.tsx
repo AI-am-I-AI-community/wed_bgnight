@@ -35,6 +35,7 @@ export default function Navigation() {
             >
               About
             </button>
+            <Link href="/events" className="nav-link">Events</Link>
             {/* <Link href="/blog" className="nav-link">Blog</Link> */}
             <button 
               onClick={() => {

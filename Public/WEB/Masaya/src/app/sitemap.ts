@@ -59,6 +59,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Events
     {
+      url: `${baseUrl}/events`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/events/boardgame`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
