@@ -1,0 +1,166 @@
+
+:root {
+    --primary-font: 'M PLUS Rounded 1c', sans-serif;
+    --title-font: 'Kaisei Opti', serif;
+    --bg-color: #fdf0e5; /* 暖色系の背景 */
+    --primary-color: #ff7e5f;
+    --secondary-color: #feb47b;
+    --text-color: #5d4037;
+    --white: #ffffff;
+    --card-bg: #fff9f2;
+}
+body {
+    font-family: var(--primary-font);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Hero --- */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 60px 0 80px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 0 0 50% 50% / 0 0 10% 10%;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative; 
+    z-index: 2;
+}
+.hero h1 {
+    font-family: var(--title-font);
+    font-size: 3.2rem;
+    color: var(--white);
+    margin: 0 0 15px 0;
+    text-shadow: 3px 3px 0px #d66045;
+}
+.hero p {
+    font-size: 1.1rem;
+    color: var(--white);
+    max-width: 550px;
+    margin: 0 auto 30px auto;
+}
+.tiki-chan-img {
+    width: 120px;
+    height: 120px;
+    background: #fff5e1;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 110px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- CTA Button --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.cta-button:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* --- Section Styling --- */
+.section {
+    padding: 60px 0;
+    margin-top: -40px;
+}
+.section-title {
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+/* --- Cards Layout --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.card {
+    background: var(--card-bg);
+    border: 3px dashed #fec89a;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card:hover { transform: translateY(-8px) rotate(1deg); }
+.card .icon { font-size: 3.5rem; margin-bottom: 15px; display: inline-block; transition: transform 0.3s; }
+.card:hover .icon { transform: scale(1.2) rotate(10deg); }
+.card h3 {
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 0 0 10px 0;
+}
+
+/* --- Story/Guide Section --- */
+.guide-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+.guide-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+.guide-item:nth-child(even) { flex-direction: row-reverse; }
+.guide-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    flex-shrink: 0;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 100px;
+}
+.guide-text h3 { margin: 0 0 10px 0; font-family: var(--title-font); color: var(--primary-color); }
+
+/* --- Testimonials --- */
+.testimonial-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.testimonial-author { font-weight: 800; text-align: right; margin-top: 10px; }
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 50px 0 30px 0;
+    margin-top: 40px;
+}

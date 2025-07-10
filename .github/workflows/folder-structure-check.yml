@@ -1,0 +1,42 @@
+name: Folder Structure Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # 毎週月曜日の午前9時に実行
+    - cron: '0 9 * * 1'
+
+jobs:
+  check-structure:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Run folder structure check
+      run: |
+        python3 scripts/check_folder_structure.py
+        
+    - name: Comment on PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const checkOutput = fs.readFileSync('check_output.txt', 'utf8');
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `## 📁 フォルダ構造チェック結果\n\n${checkOutput}`
+          }); 
